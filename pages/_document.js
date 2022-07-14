@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="/assets/logo.svg" />
-          <title>CODEVS</title>
+          <title>Course</title>
         </Head>
         <body className="bg-white dark:bg-slate-900">
           <Main />
