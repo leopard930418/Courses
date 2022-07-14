@@ -1,4 +1,3 @@
-import { APP_NAME } from "config";
 import React from "react";
 
 export default function CustomImage({
@@ -11,7 +10,7 @@ export default function CustomImage({
   return (
     <img
       src={src ?? ""}
-      alt={alt || title || APP_NAME}
+      alt={alt || title}
       {...props}
       style={{ width: `${width}`}}
     />
