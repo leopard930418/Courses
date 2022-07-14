@@ -50,7 +50,7 @@ export default function Header({ ...props }) {
     },
   }));
   return (
-    <>
+    <div className="bg-red-700">
       <Container sx={{ maxWidth: 1440 }}>
         <Grid container className="items-center">
           <Grid
@@ -95,6 +95,6 @@ export default function Header({ ...props }) {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </div>
   );
 }
