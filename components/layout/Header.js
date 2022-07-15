@@ -1,6 +1,7 @@
 import { Container, Drawer, Grid } from "@mui/material";
 import { useEffect, useState } from "react";
 import CustomImage from "../base/CustomImage";
+import CustomText from "../base/CustomText";
 import ReactSearchBox from "react-search-box";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
@@ -50,51 +51,65 @@ export default function Header({ ...props }) {
     },
   }));
   return (
-    <div className="bg-red-700">
-      <Container sx={{ maxWidth: 1440 }}>
-        <Grid container className="items-center">
-          <Grid
-            item
-            lg={2}
-            md={2}
-            sm={4}
-            xs={4}
-          >
-            <div className="flex justify-center">
-              
+    <div className="fixed w-full bg-white sm:bg-red-700 z-50">
+      {/* <Container sx={{ maxWidth: 1440 }}> */}
+      <Grid container className="items-center">
+        <Grid item lg={2} md={2} sm={2} xs={2}>
+          <div className="ml-0 sm:ml-10">
             <CustomImage
               src={"/images/logo.svg"}
               className="h-16"
             ></CustomImage>
-            </div>
+          </div>
+        </Grid>
+        <Grid item lg={4} md={4} sm={6} xs={6}>
+          <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search…"
+              inputProps={{ "aria-label": "search" }}
+            />
+          </Search>
+        </Grid>
+        <Grid
+          item
+          lg={4}
+          md={4}
+          // sm={0}
+          // xs={0}
+          sx={{ display: { xs: "none", md: "block" } }}
+        >
+          <Grid container spacing={3} justifyContent="space-around">
+            <Grid item>
+              <CustomText>Courses</CustomText>
+            </Grid>
+            <Grid item>
+              <CustomText>Programs</CustomText>
+            </Grid>
+            <Grid item>
+              <CustomText>Partnership</CustomText>
+            </Grid>
           </Grid>
-          <Grid item lg={4} md={4} sm={4} xs={4}>
-            <Search>
-              <SearchIconWrapper>
-                <SearchIcon />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Search…"
-                inputProps={{ "aria-label": "search" }}
-              />
-            </Search>
-          </Grid>
-          <Grid
-            item
-            lg={4}
-            md={4}
-            // sm={0}
-            // xs={0}
-            sx={{ display: { xs: "none", md: "block" } }}
-          ></Grid>
+        </Grid>
 
-          <Grid item lg={2} md={2} sm={4} xs={4}>
+        <Grid
+          item
+          lg={2}
+          md={2}
+          sm={4}
+          xs={4}
+          sx={{ display: { xs: "none", md: "block" } }}
+        >
+          <div className=" mr-0 sm:mr-10 flex justify-end">
             <button className="rounded-3xl bg-black text-white py-2 px-4">
               Register Now
             </button>
-          </Grid>
+          </div>
         </Grid>
-      </Container>
+      </Grid>
+      {/* </Container> */}
     </div>
   );
 }

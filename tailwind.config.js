@@ -8,27 +8,66 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        'title_font_family': ['ui-sans-serif', 'Poppins']
+      height: {
+        15: "57px",
+      },
+      zIndex: {
+        2: "2",
+      },
+      padding: {
+        66: "66px",
+      },
+      screens: {
+        xs: "450px",
+        sm: "600px",
+        md: "960px",
+        lg: "1280px",
+        xl: "1920px",
+        "sm-max": { max: "600px" },
+        "md-max": { max: "960px" },
+        "lg-max": { max: "1280px" },
+        "xl-max": { max: "1920px" },
+      },
+      spacing: {
+        "2x": "calc(200%)",
+        "3x": "calc(300%)",
+        "4x": "calc(400%)",
+        "5x": "calc(500%)",
+        "6x": "calc(600%)",
+        "7x": "calc(700%)",
       },
       backgroundImage: {
-        'section1_backrgound': "url('/assets/logo.svg')",
-        'triangle': "linear-gradient(to right, #1ee9a2, #75aefc)",
-        'contact_background':"linear-gradient(149.71deg, #19F18F 15.05%, #4EC1F6 65.37%, #E582FC 95.99%)",
-        'intro_background': "linear-gradient(30.71deg, #19F18F 25.05%, #4EC1F6 70.37%, #E582FC 95.99%)",
+        // logo: "url('/src/assets/logo/logo_360.png')",
+        background: "url('/src/assets/images/background.svg')",
+        container: "url('/src/assets/images/container.svg')",
+        inves_header_background:
+          "linear-gradient(to bottom, #000411, #0d3663, #000411)",
+        inves_body_background:
+          "linear-gradient(to right, #000411, #0d3663, #000411)",
+        inves_nav_background: "linear-gradient(to bottom, #0d3663, #000411)",
+        lizard_box_background:
+          "linear-gradient(to right, #000411, #0d3663, #000411)",
+        button_background: "linear-gradient(to bottom, #000411, #0d3663)",
+        reward_background: "linear-gradient(to right, #0d3663, #000411)",
       },
-      
-      backgroundSize: {
-        'auto': 'auto',
-        'cover': 'cover',
-        'contain': 'contain',
-        '%50': '50%',
-        '16': '4rem'
+      colors: {
+        primary: "#dbfff1",
+        secondary: "#228df3",
+        title: "#8E92B8",
+        success: "#00AA06",
+        warning: "#F1B800",
+        error: "#FF0000",
+        pinkB: "#061934",
+        white: "#ffffff",
+        blue_gray: "#8E92B8",
+        blackmenu: "#1E2135",
+        councilbg: "#1E2135",
+        fontdisccolor: "#AEACD2",
+        btncolor: "#017AFF",
       },
-      z_index: {
-        '-1': '0',
-        '0': '10',
-        '1': '20',
+      fontSize: {
+        tit: "42px",
+        baseft: "16px",
       },
     },
   },

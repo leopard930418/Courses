@@ -2,3 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+.slick-prev:before,
+.slick-next:before {
+    color: transparent !important;
+}
+
+.slick-next {
+    background: url("/images/slicknext.svg") no-repeat center !important;
+    right: 0px !important;
+
+}
+
+.slick-prev {
+    background: url("/images/slickprev.svg") no-repeat center !important;
+    right: 60px !important;
+    left: unset !important;
+
+}
+
+.slick-next,
+.slick-prev {
+    background-size: contain !important;
+    height: 67px !important;
+    width: 36px !important;
+    top: -10% !important;
+    
+}
+
+
+
+
+.slick-prev:hover {
+    background-size: contain !important;
+    height: 92px !important;
+    width: 45px !important;
+}
+
+.slick-next:hover {
+    background-size: contain !important;
+    height: 92px !important;
+    width: 45px !important;
+}
+
