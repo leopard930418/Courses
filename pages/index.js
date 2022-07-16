@@ -9,6 +9,7 @@ import Instructors from '../components/landing/Instructors'
 import Categories from '../components/landing/Categories'
 import PopularCourses from '../components/landing/PopularCourses'
 import JoinUs from '../components/landing/JoinUs'
+import Footer from '../components/layout/Footer'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Categories />
       <PopularCourses />
       <JoinUs />
+      <Footer/>
       {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>

@@ -6,17 +6,18 @@ import ReactSearchBox from "react-search-box";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
+import Router from "next/router";
 
 import Link from "next/link";
 
-export default function Header({ ...props }) {
+export default function Header({ color = false, ...props }) {
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: "30px",
     border: "solid 1px white",
-    backgroundColor: alpha(theme.palette.common.white, 1),
+    backgroundColor: alpha("#F7F7F7", 1),
     "&:hover": {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
+      backgroundColor: alpha("#F7F7F7", 1),
     },
     marginRight: theme.spacing(2),
     marginLeft: 0,
@@ -51,7 +52,11 @@ export default function Header({ ...props }) {
     },
   }));
   return (
-    <div className="fixed w-full bg-white sm:bg-red-700 z-50">
+    <div
+      className={`fixed w-full ${
+        color ? "bg-white" : "bg-white sm:bg-red-700"
+      } z-50 py-2`}
+    >
       {/* <Container sx={{ maxWidth: 1440 }}> */}
       <Grid container className="items-center">
         <Grid item lg={2} md={2} sm={2} xs={2}>
@@ -68,7 +73,7 @@ export default function Header({ ...props }) {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Search for Courses"
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
@@ -83,13 +88,40 @@ export default function Header({ ...props }) {
         >
           <Grid container spacing={3} justifyContent="space-around">
             <Grid item>
-              <CustomText>Courses</CustomText>
+              <div
+                onClick={() => {
+                  Router.push("/courses");
+                }}
+                className={`cursor-pointer ${
+                  color ? "text-black" : "text-white"
+                }`}
+              >
+                Courses
+              </div>
             </Grid>
             <Grid item>
-              <CustomText>Programs</CustomText>
+              <div
+                onClick={() => {
+                  Router.push("/programs");
+                }}
+                className={`cursor-pointer ${
+                  color ? "text-black" : "text-white"
+                }`}
+              >
+                Programs
+              </div>
             </Grid>
             <Grid item>
-              <CustomText>Partnership</CustomText>
+              <div
+                onClick={() => {
+                  Router.push("/partnership");
+                }}
+                className={`cursor-pointer ${
+                  color ? "text-black" : "text-white"
+                }`}
+              >
+                Partnership
+              </div>
             </Grid>
           </Grid>
         </Grid>

@@ -21,6 +21,7 @@ export default function PopularCourses() {
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <CourseCard
               imgsrc="/images/DesignCourse.svg"
+              chipsrc="/images/Designchip.svg"
               review={5}
               title="Mathematics"
               description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
@@ -34,6 +35,7 @@ export default function PopularCourses() {
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <CourseCard
               imgsrc="/images/WorkCourse.svg"
+              chipsrc="/images/Designchip.svg"
               review={5}
               title="Programming"
               description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
@@ -47,6 +49,7 @@ export default function PopularCourses() {
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <CourseCard
               imgsrc="/images/SystemsCourse.svg"
+              chipsrc="/images/Designchip.svg"
               review={5}
               title="Relational Database"
               description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
@@ -60,6 +63,7 @@ export default function PopularCourses() {
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <CourseCard
               imgsrc="/images/DesignCourse.svg"
+              chipsrc="/images/Designchip.svg"
               review={5}
               title="Mathematics"
               description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
@@ -73,6 +77,7 @@ export default function PopularCourses() {
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <CourseCard
               imgsrc="/images/WorkCourse.svg"
+              chipsrc="/images/Designchip.svg"
               review={5}
               title="Programming"
               description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
@@ -86,6 +91,7 @@ export default function PopularCourses() {
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <CourseCard
               imgsrc="/images/SystemsCourse.svg"
+              chipsrc="/images/Designchip.svg"
               review={5}
               title="Relational Database"
               description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"

@@ -24,6 +24,7 @@ export default function FeaturedCourse() {
         <Slider {...settings}>
           <CourseCard
             imgsrc="/images/DesignCourse.svg"
+            chipsrc="/images/Designchip.svg"
             review={5}
             title="Mathematics"
             description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
@@ -35,6 +36,7 @@ export default function FeaturedCourse() {
           />
           <CourseCard
             imgsrc="/images/WorkCourse.svg"
+            chipsrc="/images/Designchip.svg"
             review={5}
             title="Programming"
             description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
@@ -46,6 +48,7 @@ export default function FeaturedCourse() {
           />
           <CourseCard
             imgsrc="/images/SystemsCourse.svg"
+            chipsrc="/images/Designchip.svg"
             review={5}
             title="Relational Database"
             description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
@@ -57,6 +60,7 @@ export default function FeaturedCourse() {
           />
           <CourseCard
             imgsrc="/images/DesignCourse.svg"
+            chipsrc="/images/Designchip.svg"
             review={5}
             title="Mathematics"
             description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
@@ -68,6 +72,7 @@ export default function FeaturedCourse() {
           />
           <CourseCard
             imgsrc="/images/WorkCourse.svg"
+            chipsrc="/images/Designchip.svg"
             review={5}
             title="Programming"
             description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
@@ -79,6 +84,7 @@ export default function FeaturedCourse() {
           />
           <CourseCard
             imgsrc="/images/SystemsCourse.svg"
+            chipsrc="/images/Designchip.svg"
             review={5}
             title="Relational Database"
             description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
