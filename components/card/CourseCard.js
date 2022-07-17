@@ -32,10 +32,10 @@ export default function CourseCard({
         <div className="w-full rounded-md bg-white shadow-md ">
           <div className="w-full flex flex-row ">
             <div className="w-1/4 p-4">
-              <div className="w-full">
+              <div className="w-full h-full">
                 <CustomImage
                   src={imgsrc}
-                  className="object-cover"
+                  className="object-cover h-full"
                 ></CustomImage>
               </div>
             </div>

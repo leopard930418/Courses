@@ -69,6 +69,10 @@ module.exports = {
         tit: "42px",
         baseft: "16px",
       },
+      backgroundImage: {
+        // logo: "url('/src/assets/logo/logo_360.png')",
+        background: "url('/public/images/HistoryImage3.svg')",
+      },
     },
   },
   plugins: [require("tw-elements/dist/plugin")],

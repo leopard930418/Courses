@@ -17,6 +17,7 @@ src.rar
 # next.js
 /.next/
 /out/
+.next
 # misc
 .DS_Store
 .env.local
