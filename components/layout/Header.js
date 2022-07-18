@@ -7,6 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Router from "next/router";
+import MenuIcon from '@mui/icons-material/Menu';
 
 import Link from "next/link";
 
@@ -63,7 +64,11 @@ export default function Header({ color = false, ...props }) {
           <div className="ml-0 sm:ml-10">
             <CustomImage
               src={"/images/logo.svg"}
-              className="h-16"
+              className="h-16 cursor-pointer"
+              onClick={() => {
+                Router.push("/");
+              }}
+             
             ></CustomImage>
           </div>
         </Grid>
@@ -138,6 +143,18 @@ export default function Header({ color = false, ...props }) {
             <button className="rounded-3xl bg-black text-white py-2 px-4">
               Register Now
             </button>
+          </div>
+        </Grid>
+        <Grid
+          item
+          lg={0}
+          md={0}
+          sm={4}
+          xs={4}
+          sx={{ display: { xs: "block", md: "none" } }}
+        >
+          <div className=" pr-2 flex justify-end">
+            <MenuIcon />
           </div>
         </Grid>
       </Grid>

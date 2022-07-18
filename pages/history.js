@@ -3,6 +3,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import HistoryMain from "../components/History/Historymain";
 import LastestNews from "../components/History/LastestNews";
+import Teams from "../components/History/Teams";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header color />
       <HistoryMain />
       <LastestNews />
+      <Teams />
       <Footer />
     </div>
   );
