@@ -7,7 +7,7 @@ import Router from "next/router";
 export default function Welcome() {
   return (
     <>
-      <div className="bg-red-700 h-90vh sm:h-screen px-2 sm:px-10">
+      <div className="bg-red-700 h-90vh md:h-screen px-2 md:px-10">
         <Grid
           container
           direction="row"
@@ -18,15 +18,15 @@ export default function Welcome() {
             <Grid
               container
               spacing={4}
-              className="mt-20 sm:mt-0 flex flex-col justify-center sm:justify-start items-center sm:items-start"
+              className="mt-20 md:mt-0 flex flex-col justify-center md:justify-start items-center md:items-start"
             >
               <Grid item>
-                <div className="text-3xl sm:text-5xl text-white font-bold text-center sm:text-left pt-10 sm:pt-0">
+                <div className="text-3xl md:text-5xl text-white font-bold text-center md:text-left pt-10 md:pt-0">
                   LEARN COURSES AT YOUR FINGERTIPS
                 </div>
               </Grid>
               <Grid item>
-                <div className="text-base sm:text-2xl text-white text-center sm:text-left">
+                <div className="text-base md:text-2xl text-white text-center md:text-left">
                   A learning system based on formalised <br />
                   teaching with the help of resources.
                 </div>
@@ -63,7 +63,7 @@ export default function Welcome() {
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company1.svg"}
-                className="h-8 sm:h-16"
+                className="h-8 md:h-16"
               ></CustomImage>
             </div>
           </Grid>
@@ -71,7 +71,7 @@ export default function Welcome() {
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company2.svg"}
-                className="h-8 sm:h-16"
+                className="h-8 md:h-16"
               ></CustomImage>
             </div>
           </Grid>
@@ -79,7 +79,7 @@ export default function Welcome() {
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company3.svg"}
-                className="h-8 sm:h-16"
+                className="h-8 md:h-16"
               ></CustomImage>
             </div>
           </Grid>
@@ -87,7 +87,7 @@ export default function Welcome() {
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company4.svg"}
-                className="h-8 sm:h-16"
+                className="h-8 md:h-16"
               ></CustomImage>
             </div>
           </Grid>
@@ -95,7 +95,7 @@ export default function Welcome() {
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company5.svg"}
-                className="h-8 sm:h-16"
+                className="h-8 md:h-16"
               ></CustomImage>
             </div>
           </Grid>
@@ -103,7 +103,7 @@ export default function Welcome() {
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company6.svg"}
-                className="h-8 sm:h-16"
+                className="h-8 md:h-16"
               ></CustomImage>
             </div>
           </Grid>

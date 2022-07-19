@@ -6,10 +6,10 @@ export default function OurTeacher() {
   const isPhoneMode = useMediaQuery("(max-width:600px)");
   return (
     <div className="p-2 md:p-20">
-      <div className="text-xl sm:text-2xl text-[#D1222A] text-center py-4">
+      <div className="text-xl md:text-2xl text-[#D1222A] text-center py-4">
         Our Teacher
       </div>
-      <div className="text-2xl sm:text-4xl text-[#030303] font-bold text-center pt-4 pb-8">
+      <div className="text-2xl md:text-4xl text-[#030303] font-bold text-center pt-4 pb-8">
         Meet Our Teacher
       </div>
       <div>

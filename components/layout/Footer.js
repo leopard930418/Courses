@@ -5,9 +5,9 @@ import Router from "next/router";
 export default function Footer({ ...props }) {
   return (
     <>
-      <div className="w-full h-full bg-[#F5F5F5] p-4 sm:p-12 flex flex-col sm:flex-row">
-        <div className="w-full sm:w-1/3">
-          <div className="flex justify-center sm:justify-start">
+      <div className="w-full h-full bg-[#F5F5F5] p-4 md:p-12 flex flex-col md:flex-row">
+        <div className="w-full md:w-1/3">
+          <div className="flex justify-center md:justify-start">
             <CustomImage src="/images/logo.svg" className="h-16"></CustomImage>
           </div>
           <div className="text-xl text-[#353535] break-words">
@@ -15,8 +15,8 @@ export default function Footer({ ...props }) {
             task vnade tasonde. Hemiskade.
           </div>
         </div>
-        <div className="w-full sm:w-2/3 flex flex-col-reverse sm:flex-row">
-          <div className="w-full sm:w-2/3 space-x-8 flex flex-row justify-around">
+        <div className="w-full md:w-2/3 flex flex-col-reverse md:flex-row">
+          <div className="w-full md:w-2/3 space-x-8 flex flex-row justify-around">
             <ul>
               <p className="text-2xl text-[#030303] font-bold">Quick Links</p>
               <li className="text-xl text-[#353535] cursor-pointer" onClick={()=>{Router.push('/about_us')}}>About Us</li>
@@ -37,7 +37,7 @@ export default function Footer({ ...props }) {
               <li className="text-xl text-[#353535] cursor-pointer">Cookies</li>
             </ul>
           </div>
-          <div className="w-full sm:w-1/3 space-x-4 flex flex-row justify-center sm:justify-end p-4 sm:p-0">
+          <div className="w-full md:w-1/3 space-x-4 flex flex-row justify-center md:justify-end p-4 md:p-0">
             <CustomImage
               src="/images/twitter.svg"
               className="h-8"
@@ -58,7 +58,7 @@ export default function Footer({ ...props }) {
           </div>
         </div>
       </div>
-      <div className="w-full h-full bg-[#F5F5F5] p-4 sm:px-12 text-center sm:text-left">
+      <div className="w-full h-full bg-[#F5F5F5] p-4 md:px-12 text-center md:text-left">
         @1999-2022 Design Labs
       </div>
     </>

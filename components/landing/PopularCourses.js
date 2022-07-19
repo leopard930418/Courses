@@ -4,9 +4,9 @@ import CourseCard from "../card/CourseCard";
 
 export default function PopularCourses() {
   return (
-    <div className="bg-[#F5F5F5] h-full p-2 sm:p-12">
+    <div className="bg-[#F5F5F5] h-full p-2 md:p-12">
       <div className=" pt-10">
-        <div className="text-2xl sm:text-4xl pb-10 text-black text-center font-bold">
+        <div className="text-2xl md:text-4xl pb-10 text-black text-center font-bold">
           Most PoPular Courses
         </div>
       </div>
@@ -105,7 +105,7 @@ export default function PopularCourses() {
         </Grid>
       </div>
       <div className="py-8 flex justify-center">
-        <button className="rounded-3xl bg-red-700 sm:bg-black text-white py-2 px-4">
+        <button className="rounded-3xl bg-red-700 md:bg-black text-white py-2 px-4">
           View All
         </button>
       </div>

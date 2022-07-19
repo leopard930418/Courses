@@ -14,7 +14,7 @@ export default function EventMain() {
           className="w-full"
         />
       </div>
-      <div className="w-full h-full p-4 sm:p-12 flex flex-col sm:flex-row">
+      <div className="w-full h-full p-4 md:p-12 flex flex-col md:flex-row">
         <div className="w-full md:w-2/3 flex flex-col px-0 md:px-8">
           <div className="text-3xl md:text-5xl font-bold text-black pb-4">
             Become a product manager learn the Skills & job.
@@ -27,17 +27,17 @@ export default function EventMain() {
             </div>
             <div className="flex flex-col px-2 md:px-4">
               <div className="text-[#5E5E5E] text-xs">Teacher</div>
-              <div className="text-[#030303] text-sm font-bold">Elon Gated</div>
+              <div className="text-[#030303] text-md font-bold">Elon Gated</div>
             </div>
             <div className="flex flex-col px-2 md:px-4">
               <div className="text-[#5E5E5E] text-xs">Last Update:</div>
-              <div className="text-[#030303] text-sm font-bold">
+              <div className="text-[#030303] text-md font-bold">
                 July 24, 2022
               </div>
             </div>
             <div className="flex flex-col px-2 md:px-4">
               <div className="text-[#5E5E5E] text-xs">Location:</div>
-              <div className="text-[#030303] text-sm font-bold">
+              <div className="text-[#030303] text-md font-bold">
                 New York, TX 82760, US:
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function EventMain() {
             <div className="p-8 flex flex-col">
               <div className="flex flex-row justify-between items-center pb-8">
                 <div className="text-xl font-bold text-black">
-                  $75.<span className="text-sm">00</span>
+                  $75.<span className="text-md">00</span>
                 </div>
                 <div className="text-lg text-[#5E5E5E]">$142.00</div>
                 <div className="flex justify-center">
@@ -98,7 +98,7 @@ export default function EventMain() {
           </div>
         </div>
       </div>
-      <div className="w-full h-full p-4 sm:p-20 flex flex-col-reverse sm:flex-row ">
+      <div className="w-full h-full p-4 md:p-20 flex flex-col-reverse md:flex-row ">
         <div className="w-full md:w-1/2">
           <div className="text-2xl md:text-4xl text-[#030303] font-bold">
             RESEARCH-PRACTICE PARTNERSHIPS
@@ -106,7 +106,7 @@ export default function EventMain() {
           <div className="text-xl md:text-2xl text-[#1F1F1F] font-bold py-4">
             Developing a Black Studies Curriculum for New York City Schools
           </div>
-          <div className="text-sm md:text-base text-[#5E5E5E] pb-8">
+          <div className="text-md md:text-base text-[#5E5E5E] pb-8">
             In partnership with the United Way of New York City, Eagle Academy
             Foundation, Black Edfluencers-United, and Association of Black
             Educators of New York, BERC is leading the development of an
@@ -121,21 +121,21 @@ export default function EventMain() {
             </button>
           </div>
         </div>
-        <div className="w-full md:w-1/2 px-2 md:px-8 flex justify-end">
+        <div className="w-full md:w-1/2 px-2 md:pl-8 flex justify-end">
           <CustomImage src="/images/EventImage1.svg" />
         </div>
       </div>
-      <div className="w-full h-full p-4 sm:p-20 flex flex-col-reverse sm:flex-row-reverse ">
+      <div className="w-full h-full p-4 md:p-20 flex flex-col-reverse md:flex-row-reverse ">
         <div className="w-full md:w-1/2">
           <div className="text-2xl md:text-4xl text-[#030303] font-bold">
             REPORTS & BRIEFS
           </div>
           <div className="text-xl md:text-2xl text-[#1F1F1F] font-bold py-4">
-            Black Education in the Wake of COVID-19 & Systemic Racism
+            Black Education in the Wake of COVID-19 & Systemic Racimd
           </div>
-          <div className="text-sm md:text-base text-[#5E5E5E] pb-8">
+          <div className="text-md md:text-base text-[#5E5E5E] pb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            eiumdod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -148,8 +148,27 @@ export default function EventMain() {
             </button>
           </div>
         </div>
-        <div className="w-full md:w-1/2 px-2 md:px-8 flex justify-start">
+        <div className="w-full md:w-1/2 px-2 md:pr-8 flex justify-start">
           <CustomImage src="/images/EventImage1.svg" />
+        </div>
+      </div>
+      <div className="bg-[#D1222A] h-full">
+        <div className="flex flex-col-reverse md:flex-row-reverse">
+          <div className="w-full md:w-1/2 flex justify-center">
+            <CustomImage src="/images/EventImage2.svg" />
+          </div>
+          <div className="w-full md:w-1/2 flex justify-center items-center">
+            <div className="flex flex-col items-center md:items-start pt-10 md:pt-0">
+              <div className="text-2xl md:text-4xl pb-4 text-white text-center md:text-left bold">
+                Are you interested in becoming <br/>an instructor?
+              </div>
+              <div className="py-8 flex justify-start">
+                <button className="rounded-md bg-white text-red-700 font-bold py-2 px-4">
+                  Join Us Today
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

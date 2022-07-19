@@ -5,12 +5,12 @@ import CustomText from "../base/CustomText";
 import EducationCard from "../card/EducationCard";
 export default function EducationMethod() {
   return (
-    <div className="bg-[#2E6D48] h-full p-2 sm:p-12">
+    <div className="bg-[#2E6D48] h-full p-2 md:p-12">
       <div className="flex flex-col justify-center items-center pb-10">
-        <div className="text-2xl sm:text-4xl pb-4 text-white text-center bold">
+        <div className="text-2xl md:text-4xl pb-4 text-white text-center bold">
           We Educate your online in a more interactive way
         </div>
-        <div className="text-base sm:text-2xl text-white text-center">
+        <div className="text-base md:text-2xl text-white text-center">
           Loem ipsum makcov task vanade Hemiskade mevatuledes
         </div>
       </div>

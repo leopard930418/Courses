@@ -4,12 +4,12 @@ import EducationCard from "../card/EducationCard";
 import InstructorCard from "../card/InstructorCard";
 export default function Instructors() {
   return (
-    <div className="bg-[#D1222A] h-full px-2 sm:px-12 pt-12">
+    <div className="bg-[#D1222A] h-full px-2 md:px-12 pt-12">
       <div className="flex flex-col justify-center items-center pb-10">
-        <div className="text-2xl sm:text-4xl pb-4 text-white text-center bold">
+        <div className="text-2xl md:text-4xl pb-4 text-white text-center bold">
           Instructors that are Most Popular{" "}
         </div>
-        <div className="text-base sm:text-2xl text-white text-center">
+        <div className="text-base md:text-2xl text-white text-center">
           Loem ipsum makcov task vanade Hemiskade mevatuledes
         </div>
       </div>

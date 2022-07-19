@@ -12,11 +12,11 @@ export default function Faq() {
     setExpanded(isExpanded ? panel : false);
   };
   return (
-    <div className="bg-[#F5F5F5] h-full p-2 sm:p-8 flex flex-col items-center ">
-      <div className="text-2xl sm:text-4xl py-4 text-[#231F20] text-center font-bold">
+    <div className="bg-[#F5F5F5] h-full p-2 md:p-8 flex flex-col items-center ">
+      <div className="text-2xl md:text-4xl py-4 text-[#231F20] text-center font-bold">
         FAQ
       </div>
-      <div className="w-full sm:w-2/3">
+      <div className="w-full md:w-2/3">
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}

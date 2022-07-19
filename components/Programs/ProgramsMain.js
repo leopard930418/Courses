@@ -18,12 +18,12 @@ export default function ProgramsMain() {
         />
       </div>
 
-      <div className="flex flex-col sm:flex-row p-2 md:p-20">
+      <div className="flex flex-col md:flex-row p-2 md:p-20">
         <div className="w-full md:w-1/2">
           <CustomImage src="/images/ProgramsImage1M.svg"></CustomImage>
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center space-y-4">
-          <div className="text-2xl sm:text-4xl pb-4 text-[#030303] text-center md:text-left font-bold pt-10">
+          <div className="text-2xl md:text-4xl pb-4 text-[#030303] text-center md:text-left font-bold pt-10">
             All Famous Global Class at One Place
           </div>
 
@@ -41,7 +41,7 @@ export default function ProgramsMain() {
       <div className="flex flex-col p-2 md:p-20">
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-8">
           <div className="w-full md:w-1/2 flex flex-col">
-            <div className="text-2xl sm:text-4xl pb-4 md:pb-10 text-[#030303] text-left  font-bold">
+            <div className="text-2xl md:text-4xl pb-4 md:pb-10 text-[#030303] text-left  font-bold">
               Our Few Programs
             </div>
             <ProgramsCard
@@ -59,10 +59,10 @@ export default function ProgramsMain() {
         </div>
       </div>
       <div className="p-2 md:p-20">
-        <div className="text-2xl sm:text-4xl text-[#030303] font-bold text-center pt-4 pb-8">
+        <div className="text-2xl md:text-4xl text-[#030303] font-bold text-center pt-4 pb-8">
           Our Popular Courses
         </div>
-        <div className="text-base sm:text-xl text-[#5E5E5E] text-center pt-4 pb-8">
+        <div className="text-base md:text-xl text-[#5E5E5E] text-center pt-4 pb-8">
           Non-disclosure agreement seed round seed money <br />
           accelerator infulencer.growth hacking return.
         </div>

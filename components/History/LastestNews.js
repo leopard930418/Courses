@@ -11,7 +11,7 @@ export default function LastestNews() {
     <>
       <div className="flex flex-col p-2 md:p-20">
         <div className="w-full flex flex-col space-y-4">
-          <div className="text-2xl sm:text-4xl pb-4 text-[#030303] text-center  font-bold pt-10">
+          <div className="text-2xl md:text-4xl pb-4 text-[#030303] text-center  font-bold pt-10">
             Lastest News and Resources
           </div>
           <div className="text-base pb-4 text-[#5E5E5E] text-center  ">
@@ -28,11 +28,11 @@ export default function LastestNews() {
                 </button>
               </div>
               <div className="w-full flex flex-col space-y-4">
-                <div className="text-2xl sm:text-3xl pb-4 text-[#030303] text-left font-bold pt-10">
+                <div className="text-2xl md:text-3xl pb-4 text-[#030303] text-left font-bold pt-10">
                   Class adds $30 million to its balance sheet for a
                   Zoom-friendly edtech solution
                 </div>
-                <div className="text-lg sm:text-xl pb-4 text-[#5E5E5E] text-left ">
+                <div className="text-lg md:text-xl pb-4 text-[#5E5E5E] text-left ">
                   Class, launched less than a year ago by Blackboard co-founder
                   Michale Chaasen, integrates exclusively...{" "}
                 </div>

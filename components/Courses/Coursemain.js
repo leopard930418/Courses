@@ -15,9 +15,9 @@ export default function Coursemain() {
   return (
     <>
       <div className="w-full h-full pt-20">
-        <CustomImage src="/images/Courseheader.svg" />
+        <CustomImage src="/images/Courseheader.svg" className="w-full"/>
       </div>
-      <div className="w-full h-full p-4 sm:p-12 flex flex-col-reverse sm:flex-row">
+      <div className="w-full h-full p-4 md:p-12 flex flex-col-reverse md:flex-row">
         <div className="w-full md:w-2/3">
           <div className=" flex flex-row flex-wrap items-center space-x-4 py-8">
             <button
@@ -149,25 +149,25 @@ export default function Coursemain() {
             <Pagination count={10} variant="outlined" color="primary" />
           </div>
         </div>
-        <div className="w-full md:w-1/3 flex flex-col p-4 sm:p-12">
+        <div className="w-full md:w-1/3 flex flex-col p-4 md:p-12">
           <div className="flex justify-center ">
             <CustomImage src="/images/CourseIcon1.svg"></CustomImage>
           </div>
-          <div className="text-xl text-[#030303] text-center p-4 sm:p-8">
+          <div className="text-xl text-[#030303] text-center p-4 md:p-8">
             <span className="font-bold">10 Million</span> Students Learning
             around the world
           </div>
           <div className="flex justify-center ">
             <CustomImage src="/images/CourseIcon2.svg"></CustomImage>
           </div>
-          <div className="text-xl text-[#030303] text-center p-4 sm:p-8">
+          <div className="text-xl text-[#030303] text-center p-4 md:p-8">
             Courses from
             <span className="font-bold">200 Universities and experts</span>
           </div>
           <div className="flex justify-center ">
             <CustomImage src="/images/CourseIcon3.svg"></CustomImage>
           </div>
-          <div className="text-xl text-[#030303] text-center p-4 sm:p-8">
+          <div className="text-xl text-[#030303] text-center p-4 md:p-8">
             <span className="font-bold">80% Learners</span> already started the
             professional careers
           </div>

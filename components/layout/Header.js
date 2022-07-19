@@ -55,13 +55,13 @@ export default function Header({ color = false, ...props }) {
   return (
     <div
       className={`fixed w-full ${
-        color ? "bg-white" : "bg-white sm:bg-red-700"
+        color ? "bg-white" : "bg-white md:bg-red-700"
       } z-50 py-2`}
     >
       {/* <Container sx={{ maxWidth: 1440 }}> */}
       <Grid container className="items-center">
         <Grid item lg={2} md={2} sm={2} xs={2}>
-          <div className="ml-0 sm:ml-10">
+          <div className="ml-0 md:ml-10">
             <CustomImage
               src={"/images/logo.svg"}
               className="h-16 cursor-pointer"
@@ -138,7 +138,7 @@ export default function Header({ color = false, ...props }) {
           xs={4}
           sx={{ display: { xs: "none", md: "block" } }}
         >
-          <div className=" mr-0 sm:mr-10 flex justify-end">
+          <div className=" mr-0 md:mr-10 flex justify-end">
             <button
               className="rounded-3xl bg-black text-white py-2 px-4"
               onClick={() => {

@@ -15,16 +15,16 @@ export default function HistoryMain() {
         />
       </div>
 
-      <div className="flex flex-col sm:flex-row p-2 md:p-20">
+      <div className="flex flex-col md:flex-row p-2 md:p-20">
         <div className="w-full md:w-1/2">
           <CustomImage src="/images/HistoryImage1.svg"></CustomImage>
         </div>
         <div className="w-full md:w-1/2 flex flex-col space-y-4">
-          <div className="text-2xl sm:text-4xl pb-4 text-[#030303] text-center md:text-left font-bold pt-10">
+          <div className="text-2xl md:text-4xl pb-4 text-[#030303] text-center md:text-left font-bold pt-10">
             TC Alumni Ask "Why Not Consider Credentialing High School Teachers
             as College Adjuscts?"
           </div>
-          <div className="text-xl sm:text-2xl pb-4 text-[#5E5E5E] text-center md:text-left ">
+          <div className="text-xl md:text-2xl pb-4 text-[#5E5E5E] text-center md:text-left ">
             Tc alumni propose a pathway to higher education in a new op-ed
           </div>
           <div className="text-base pb-4 text-[#5E5E5E] text-center md:text-left ">
@@ -41,7 +41,7 @@ export default function HistoryMain() {
       </div>
       <div className="flex flex-col p-2 md:p-20">
         <div className="w-full flex flex-col space-y-4">
-          <div className="text-2xl sm:text-4xl pb-4 text-[#030303] text-center  font-bold pt-10">
+          <div className="text-2xl md:text-4xl pb-4 text-[#030303] text-center  font-bold pt-10">
             What is eLearn?
           </div>
           <div className="text-base pb-4 text-[#5E5E5E] text-center  ">
