@@ -21,7 +21,7 @@ export default function FeaturedCourse() {
         </div>
       </div>
       <div className="">
-        <Slider {...settings}>
+        <Slider {...settings} style={{ display: "flex", marginLeft:"20px"}}>
           <CourseCard
             imgsrc="/images/DesignCourse.svg"
             chipsrc="/images/Designchip.svg"

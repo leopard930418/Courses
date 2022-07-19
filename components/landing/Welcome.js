@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import CustomImage from "../base/CustomImage";
 import CustomText from "../base/CustomText";
-import Router from "next/router"
+import Router from "next/router";
 
 export default function Welcome() {
   return (
@@ -36,7 +36,7 @@ export default function Welcome() {
                   <button
                     className="rounded-3xl bg-black text-white py-2 px-4"
                     onClick={() => {
-                      Router.push('/login');
+                      Router.push("/login");
                     }}
                   >
                     Try Design Labs For Free
@@ -52,7 +52,7 @@ export default function Welcome() {
           </Grid>
         </Grid>
       </div>
-      <div className="bg-white h-20">
+      <div className="bg-white h-20 flex justify-center items-center">
         <Grid
           container
           direction="row"
@@ -60,40 +60,52 @@ export default function Welcome() {
           alignItems="center"
         >
           <Grid item lg={2} md={2} sm={4} xs={4}>
-            <CustomImage
-              src={"/images/company1.svg"}
-              className="h-8 sm:h-16"
-            ></CustomImage>
+            <div className="flex justify-center items-center">
+              <CustomImage
+                src={"/images/company1.svg"}
+                className="h-8 sm:h-16"
+              ></CustomImage>
+            </div>
           </Grid>
           <Grid item lg={2} md={2} sm={4} xs={4}>
-            <CustomImage
-              src={"/images/company2.svg"}
-              className="h-8 sm:h-16"
-            ></CustomImage>
+            <div className="flex justify-center items-center">
+              <CustomImage
+                src={"/images/company2.svg"}
+                className="h-8 sm:h-16"
+              ></CustomImage>
+            </div>
           </Grid>
           <Grid item lg={2} md={2} sm={4} xs={4}>
-            <CustomImage
-              src={"/images/company3.svg"}
-              className="h-8 sm:h-16"
-            ></CustomImage>
+            <div className="flex justify-center items-center">
+              <CustomImage
+                src={"/images/company3.svg"}
+                className="h-8 sm:h-16"
+              ></CustomImage>
+            </div>
           </Grid>
           <Grid item lg={2} md={2} sm={4} xs={4}>
-            <CustomImage
-              src={"/images/company4.svg"}
-              className="h-8 sm:h-16"
-            ></CustomImage>
+            <div className="flex justify-center items-center">
+              <CustomImage
+                src={"/images/company4.svg"}
+                className="h-8 sm:h-16"
+              ></CustomImage>
+            </div>
           </Grid>
           <Grid item lg={2} md={2} sm={4} xs={4}>
-            <CustomImage
-              src={"/images/company5.svg"}
-              className="h-8 sm:h-16"
-            ></CustomImage>
+            <div className="flex justify-center items-center">
+              <CustomImage
+                src={"/images/company5.svg"}
+                className="h-8 sm:h-16"
+              ></CustomImage>
+            </div>
           </Grid>
           <Grid item lg={2} md={2} sm={4} xs={4}>
-            <CustomImage
-              src={"/images/company6.svg"}
-              className="h-8 sm:h-16"
-            ></CustomImage>
+            <div className="flex justify-center items-center">
+              <CustomImage
+                src={"/images/company6.svg"}
+                className="h-8 sm:h-16"
+              ></CustomImage>
+            </div>
           </Grid>
         </Grid>
       </div>
