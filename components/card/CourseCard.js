@@ -113,10 +113,10 @@ export default function CourseCard({
               <div className="w-full pl-4 py-2 text-3xl font-bold text-[#030303] text-left">
                 {title}
               </div>
-              <div className="w-full px-4 pb-2 text-xl text-[#030303] text-left break-words">
+              <div className="w-5/6 px-4 pb-2 text-xl text-[#030303] text-left break-words">
                 {description}
               </div>
-              <div className="w-5/6 flex flex-row items-center pl-4 py-2 space-x-2">
+              <div className="w-full flex flex-row items-center pl-4 py-2 space-x-2">
                 <AccessTimeIcon style={{ color: "#F9AA1B" }} />
                 <CustomText
                   align="left"

@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js -p $PORT",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",

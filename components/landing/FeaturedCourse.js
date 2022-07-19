@@ -7,12 +7,38 @@ import Slider from "react-slick";
 export default function FeaturedCourse() {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
- 
   return (
     <div className="bg-[#F5F5F5] h-full p-2 sm:p-12">
       <div className=" pt-10">
@@ -21,7 +47,7 @@ export default function FeaturedCourse() {
         </div>
       </div>
       <div className="">
-        <Slider {...settings} style={{ display: "flex", marginLeft:"20px"}}>
+        <Slider {...settings}>
           <CourseCard
             imgsrc="/images/DesignCourse.svg"
             chipsrc="/images/Designchip.svg"
