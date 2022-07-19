@@ -38,7 +38,7 @@ export default function PopularCourses() {
               chipsrc="/images/Designchip.svg"
               review={5}
               title="Programming"
-              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
               accessTime="12hr 42mins"
               lecturesCount={43}
               avatarsrc="/images/avatar2.png"
@@ -52,7 +52,7 @@ export default function PopularCourses() {
               chipsrc="/images/Designchip.svg"
               review={5}
               title="Relational Database"
-              description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+              description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
               accessTime="12hr 42mins"
               lecturesCount={43}
               avatarsrc="/images/avatar3.png"
@@ -66,7 +66,7 @@ export default function PopularCourses() {
               chipsrc="/images/Designchip.svg"
               review={5}
               title="Mathematics"
-              description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
               accessTime="12hr 42mins"
               lecturesCount={43}
               avatarsrc="/images/avatar1.png"
@@ -80,7 +80,7 @@ export default function PopularCourses() {
               chipsrc="/images/Designchip.svg"
               review={5}
               title="Programming"
-              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
               accessTime="12hr 42mins"
               lecturesCount={43}
               avatarsrc="/images/avatar2.png"
@@ -94,7 +94,7 @@ export default function PopularCourses() {
               chipsrc="/images/Designchip.svg"
               review={5}
               title="Relational Database"
-              description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+              description="cccccccccccccccccccccccccccccccccccccccccccccccccc"
               accessTime="12hr 42mins"
               lecturesCount={43}
               avatarsrc="/images/avatar3.png"

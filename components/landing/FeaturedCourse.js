@@ -3,41 +3,21 @@ import CourseCard from "../card/CourseCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function FeaturedCourse() {
+  const isPhoneMode = useMediaQuery("(max-width:600px)");
   const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    className: "center",
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: isPhoneMode? 1 : 4,
+    swipeToSlide: true,
+    afterChange: function (index) {
+      console.log(
+        `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+      );
+    },
   };
   return (
     <div className="bg-[#F5F5F5] h-full p-2 sm:p-12">
@@ -65,7 +45,7 @@ export default function FeaturedCourse() {
             chipsrc="/images/Designchip.svg"
             review={5}
             title="Programming"
-            description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
             accessTime="12hr 42mins"
             lecturesCount={43}
             avatarsrc="/images/avatar2.png"
@@ -77,7 +57,7 @@ export default function FeaturedCourse() {
             chipsrc="/images/Designchip.svg"
             review={5}
             title="Relational Database"
-            description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+            description="cccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
             accessTime="12hr 42mins"
             lecturesCount={43}
             avatarsrc="/images/avatar3.png"
@@ -101,7 +81,7 @@ export default function FeaturedCourse() {
             chipsrc="/images/Designchip.svg"
             review={5}
             title="Programming"
-            description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
             accessTime="12hr 42mins"
             lecturesCount={43}
             avatarsrc="/images/avatar2.png"
@@ -113,7 +93,7 @@ export default function FeaturedCourse() {
             chipsrc="/images/Designchip.svg"
             review={5}
             title="Relational Database"
-            description="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+            description="cccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
             accessTime="12hr 42mins"
             lecturesCount={43}
             avatarsrc="/images/avatar3.png"
