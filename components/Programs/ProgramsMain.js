@@ -14,6 +14,7 @@ export default function ProgramsMain() {
       <div className="w-full h-full pt-20 pb-10">
         <CustomImage
           src={`/images/HistoryHeader${isPhoneMode ? "M" : ""}.svg`}
+          className="w-full"
         />
       </div>
 

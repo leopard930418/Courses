@@ -11,6 +11,7 @@ export default function FaqMain() {
       <div className="w-full h-full pt-20 pb-10">
         <CustomImage
           src={`/images/FaqHeader${isPhoneMode ? "M" : ""}.svg`}
+          className="w-full"
         />
       </div>
       <div className="flex justify-center">

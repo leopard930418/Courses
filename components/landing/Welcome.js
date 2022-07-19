@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import CustomImage from "../base/CustomImage";
 import CustomText from "../base/CustomText";
+import Router from "next/router"
 
 export default function Welcome() {
   return (
@@ -32,7 +33,12 @@ export default function Welcome() {
               </Grid>
               <Grid item>
                 <div className="">
-                  <button className="rounded-3xl bg-black text-white py-2 px-4">
+                  <button
+                    className="rounded-3xl bg-black text-white py-2 px-4"
+                    onClick={() => {
+                      Router.push('/login');
+                    }}
+                  >
                     Try Design Labs For Free
                   </button>
                 </div>
