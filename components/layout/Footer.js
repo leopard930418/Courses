@@ -7,7 +7,7 @@ export default function Footer({ ...props }) {
     <>
       <div className="w-full h-full bg-[#F5F5F5] p-4 md:p-12 flex flex-col md:flex-row">
         <div className="w-full md:w-1/3">
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start py-4">
             <CustomImage src="/images/logo.svg" className="h-16"></CustomImage>
           </div>
           <div className="text-xl text-[#353535] break-words">
@@ -18,23 +18,23 @@ export default function Footer({ ...props }) {
         <div className="w-full md:w-2/3 flex flex-col-reverse md:flex-row">
           <div className="w-full md:w-2/3 space-x-8 flex flex-row justify-around">
             <ul>
-              <p className="text-2xl text-[#030303] font-bold">Quick Links</p>
-              <li className="text-xl text-[#353535] cursor-pointer" onClick={()=>{Router.push('/about_us')}}>About Us</li>
-              <li className="text-xl text-[#353535] cursor-pointer">For Business</li>
-              <li className="text-xl text-[#353535] cursor-pointer">Affiliates</li>
-              <li className="text-xl text-[#353535] cursor-pointer">Careers</li>
-              <li className="text-xl text-[#353535] cursor-pointer">News</li>
+              <p className="text-2xl text-[#030303] font-bold py-4">Quick Links</p>
+              <li className="text-xl text-[#353535] cursor-pointer py-2" onClick={()=>{Router.push('/about_us')}}>About Us</li>
+              <li className="text-xl text-[#353535] cursor-pointer py-2">For Business</li>
+              <li className="text-xl text-[#353535] cursor-pointer py-2">Affiliates</li>
+              <li className="text-xl text-[#353535] cursor-pointer py-2">Careers</li>
+              <li className="text-xl text-[#353535] cursor-pointer py-2">News</li>
             </ul>
             <ul>
-              <p className="text-2xl text-[#030303] font-bold">Connect</p>
-              <li className="text-xl text-[#353535] cursor-pointer">Blog</li>
-              <li className="text-xl text-[#353535] cursor-pointer">Contact Us</li>
+              <p className="text-2xl text-[#030303] font-bold py-4">Connect</p>
+              <li className="text-xl text-[#353535] cursor-pointer py-2" onClick={()=>{Router.push('/blog')}}>Blog</li>
+              <li className="text-xl text-[#353535] cursor-pointer py-2" onClick={()=>{Router.push('/teams')}}>Contact Us</li>
             </ul>
             <ul>
-              <p className="text-2xl text-[#030303] font-bold">Legal</p>
-              <li className="text-xl text-[#353535] cursor-pointer">Terms of Service</li>
-              <li className="text-xl text-[#353535] cursor-pointer">Privacy Policy</li>
-              <li className="text-xl text-[#353535] cursor-pointer">Cookies</li>
+              <p className="text-2xl text-[#030303] font-bold py-4">Legal</p>
+              <li className="text-xl text-[#353535] cursor-pointer py-2" onClick={()=>{Router.push('/teams')}}>Terms of Service</li>
+              <li className="text-xl text-[#353535] cursor-pointer py-2">Privacy Policy</li>
+              <li className="text-xl text-[#353535] cursor-pointer py-2">Cookies</li>
             </ul>
           </div>
           <div className="w-full md:w-1/3 space-x-4 flex flex-row justify-center md:justify-end p-4 md:p-0">
