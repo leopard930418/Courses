@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Pagination from "@mui/material/Pagination";
 import CustomImage from "../base/CustomImage";
