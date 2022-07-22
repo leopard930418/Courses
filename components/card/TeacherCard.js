@@ -1,17 +1,11 @@
 import React, { useState } from "react";
-
-import StarIcon from "@mui/icons-material/Star";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
-import ImportContactsIcon from "@mui/icons-material/ImportContacts";
-
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import ArticleIcon from "@mui/icons-material/Article";
-
 import CustomImage from "../base/CustomImage";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Skeleton } from "@mui/material";
+import PropTypes from "prop-types";
 
 export default function TeacherCard({
   imgsrc = "",
@@ -19,10 +13,21 @@ export default function TeacherCard({
   description = "",
   ...props
 }) {
+  const { loading = false } = props;
+
   return (
     <div className="h-full w-full rounded-md border border-[#E7E7E7] bg-white shadow-md p-2">
+      {console.log(">>>>>>>>>>", loading)}
       <div className="w-full">
-        <CustomImage src={imgsrc} className="w-full"></CustomImage>
+        {loading ? (
+          <Skeleton
+            sx={{ height: 400 }}
+            animation="wave"
+            varient="rectangular"
+          />
+        ) : (
+          <CustomImage src={imgsrc} className="w-full"></CustomImage>
+        )}
       </div>
       <div className="text-3xl text-[#030303] text-center font-bold pt-8">
         {teacherName}
@@ -39,3 +44,6 @@ export default function TeacherCard({
     </div>
   );
 }
+TeacherCard.propTypes = {
+  loading: PropTypes.bool,
+};
