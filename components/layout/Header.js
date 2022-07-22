@@ -1,17 +1,13 @@
-import { Container, Drawer, Grid, Menu, MenuItem, Button } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import {Grid, Menu, MenuItem, } from "@mui/material";
+import React, { useState } from "react";
 import CustomImage from "../base/CustomImage";
-import CustomText from "../base/CustomText";
-import ReactSearchBox from "react-search-box";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Router from "next/router";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Dropdown } from "rsuite";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-import Link from "next/link";
 
 export default function Header({ color = false, ...props }) {
   const Search = styled("div")(({ theme }) => ({
@@ -67,7 +63,7 @@ export default function Header({ color = false, ...props }) {
   const toggleDrawer = (show) => () => {
     setPhoneMenuShow(show);
   };
-  const navs = [
+  const navitem = [
     { to: "/courses", label: "Courses" },
     { to: "/programs", label: "Programs" },
     { to: "/", label: "Partnership" },
@@ -229,7 +225,7 @@ export default function Header({ color = false, ...props }) {
                 onClick={toggleDrawer(false)}
               ></CustomImage>
             </div>
-            {navs.map((item, itemIndex) => (
+            {navitem.map((items, itemIndex) => (
               <div
                 className="mx-4 py-4 border-b border-blue_gray border-opacity-10"
                 key={itemIndex}
@@ -237,11 +233,11 @@ export default function Header({ color = false, ...props }) {
                 <div
                   onClick={() => {
                     setPhoneMenuShow(!phoneMenuShow);
-                    Router.push(item.to);
+                    Router.push(items.to);
                   }}
                 >
                   <div className="text-black text-lg text-left">
-                    {item?.label ?? ""}
+                    {items?.label ?? ""}
                   </div>
                 </div>
                 {/* <CustomImage src={border} className="w-full px-1 py-1"></CustomImage> */}

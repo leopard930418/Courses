@@ -6,7 +6,7 @@ import CustomImage from "../base/CustomImage";
 import CourseCard from "../card/CourseCard";
 import NavItem from "rsuite/esm/Nav/NavItem";
 
-export default function Coursemain() {
+export default function CourseMain() {
   const [buttonActive, setButtonActive] = useState();
   const clickTab = (num) => {
     setButtonActive(num);

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-import Coursemain from "../components/Courses/Coursemain";
+import CourseMain from "../components/Courses/CourseMain";
 import JoinUs from "../components/Courses/JoinUs";
 import Faq from "../components/Courses/Faq";
 
@@ -14,7 +14,7 @@ export default function Courses() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <Header color />
-      <Coursemain />
+      <CourseMain />
       <JoinUs
         imgsrc="/images/CoursesJoinUs.svg"
         title="Want to Control your Future?"

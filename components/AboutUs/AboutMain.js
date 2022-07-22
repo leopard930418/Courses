@@ -21,30 +21,36 @@ export default function AboutMain() {
             Achieve Your Goals With BERC
           </div>
           <div className="text-base pb-4 text-[#5E5E5E] text-left ">
-            Lorem ipsum spengen nyng att betredes. Pugisk ayna, deng med
-            preheten.
+            Lörem ipsum reass spengen nyng att betredes. Pugisk gyna, deng med
+            preheten. Homosade lafan. Or jyr obelt. Makror nidyda parapus rår.
+            Evis poteligen. Desår kontranas josk. Intrader bir. preheten.
           </div>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox defaultChecked />}
-              label="Upskill your organization"
-              className="text-[#5E5E5E]"
-            />
-          </FormGroup>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox defaultChecked />}
-              label="Access more then 100K online courses"
-              className="text-[#5E5E5E]"
-            />
-          </FormGroup>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox defaultChecked />}
-              label="Learn the latest skills"
-              className="text-[#5E5E5E]"
-            />
-          </FormGroup>
+          <div className="flex flex-col space-y-4">
+            <div className="flex flex-row items-center">
+              <div>
+                <CustomImage src="/images/checkIcon.svg"></CustomImage>
+              </div>
+              <div className="text-[#322E2E] text-base md:text-xl pl-4">
+                Upskill your organization
+              </div>
+            </div>
+            <div className="flex flex-row items-center">
+              <div>
+                <CustomImage src="/images/checkIcon.svg"></CustomImage>
+              </div>
+              <div className="text-[#322E2E] text-base md:text-xl pl-4">
+                Access more then 100K online courses
+              </div>
+            </div>
+            <div className="flex flex-row items-center">
+              <div>
+                <CustomImage src="/images/checkIcon.svg"></CustomImage>
+              </div>
+              <div className="text-[#322E2E] text-base md:text-xl pl-4">
+                Learn the latest skills
+              </div>
+            </div>
+          </div>
 
           <div className="py-8">
             <button className="rounded-md bg-[#F9AA1B] text-[#030303] py-2 px-4">
