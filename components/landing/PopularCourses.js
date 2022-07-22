@@ -1,9 +1,11 @@
-import { Grid } from "@mui/material";
+import { Grid, useMediaQuery } from "@mui/material";
 import React, { useState } from "react";
 import CourseCard from "../card/CourseCard";
 
 export default function PopularCourses() {
   const [showAll, setShowAll] = useState(false);
+  const isPhoneMode = useMediaQuery("(max-width:600px)");
+
   const courseData = [
     {
       imgsrc: "/images/DesignCourse.svg",
@@ -110,7 +112,7 @@ export default function PopularCourses() {
                 />
               </Grid>
             ) : (
-              index < 3 && (
+              index < (isPhoneMode ? 3 : 6) && (
                 <Grid item lg={4} md={4} sm={12} xs={12} key={index}>
                   <CourseCard
                     imgsrc={items.imgsrc}
