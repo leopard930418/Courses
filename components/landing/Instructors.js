@@ -48,7 +48,8 @@ export default function Instructors() {
   ];
   const [showAll, setShowAll] = useState(false);
   const isPhoneMode = useMediaQuery("(max-width:600px)");
-  return (
+
+   return (
     <div className="bg-[#D1222A] h-full px-2 py-12 md:p-20">
       <div className="flex flex-col justify-center items-center pb-10">
         <div className="text-2xl md:text-4xl pb-4 text-white text-center bold">

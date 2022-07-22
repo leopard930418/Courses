@@ -10,17 +10,23 @@ export default function AboutMain() {
   return (
     <>
       <div className="w-full h-full pt-20 pb-10">
-        <CustomImage src={`/images/AboutHeader${isPhoneMode ? "M" : ""}.svg`} />
+        <CustomImage
+          src={`/images/AboutHeader${isPhoneMode ? "M" : ""}.svg`}
+          className="w-full"
+        />
       </div>
       <div className="flex flex-col md:flex-row p-2 md:p-20">
         <div className="w-full md:w-1/2">
-          <CustomImage src="/images/AboutImage1.svg"></CustomImage>
+          <CustomImage
+            src="/images/AboutImage1.svg"
+            className="w-full md:w-11/12"
+          ></CustomImage>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col space-y-4">
-          <div className="text-2xl md:text-4xl pb-4 text-[#030303] text-left font-bold pt-10">
-            Achieve Your Goals With BERC
+        <div className="w-full md:w-1/2 flex flex-col space-y-4 pl-0 md:pl-20">
+          <div className="text-3xl md:text-5xl pb-4 text-[#030303] text-left font-bold pt-10">
+            Achieve Your <br /> Goals With BERC
           </div>
-          <div className="text-base pb-4 text-[#5E5E5E] text-left ">
+          <div className="text-lg pb-4 text-[#5E5E5E] text-left ">
             Lörem ipsum reass spengen nyng att betredes. Pugisk gyna, deng med
             preheten. Homosade lafan. Or jyr obelt. Makror nidyda parapus rår.
             Evis poteligen. Desår kontranas josk. Intrader bir. preheten.
@@ -30,7 +36,7 @@ export default function AboutMain() {
               <div>
                 <CustomImage src="/images/checkIcon.svg"></CustomImage>
               </div>
-              <div className="text-[#322E2E] text-base md:text-xl pl-4">
+              <div className="text-[#322E2E] text-base pl-4">
                 Upskill your organization
               </div>
             </div>
@@ -38,7 +44,7 @@ export default function AboutMain() {
               <div>
                 <CustomImage src="/images/checkIcon.svg"></CustomImage>
               </div>
-              <div className="text-[#322E2E] text-base md:text-xl pl-4">
+              <div className="text-[#322E2E] text-base  pl-4">
                 Access more then 100K online courses
               </div>
             </div>
@@ -46,7 +52,7 @@ export default function AboutMain() {
               <div>
                 <CustomImage src="/images/checkIcon.svg"></CustomImage>
               </div>
-              <div className="text-[#322E2E] text-base md:text-xl pl-4">
+              <div className="text-[#322E2E] text-base pl-4">
                 Learn the latest skills
               </div>
             </div>
@@ -61,9 +67,12 @@ export default function AboutMain() {
       </div>
       <div className="flex flex-col md:flex-row-reverse p-2 md:p-20">
         <div className="w-full md:w-1/2">
-          <CustomImage src="/images/AboutImage2.svg"></CustomImage>
+          <CustomImage
+            src="/images/AboutImage2.svg"
+            className="w-full"
+          ></CustomImage>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col space-y-4">
+        <div className="w-full md:w-1/2 flex flex-col space-y-4 pr-0 md:pr-20">
           <div className="text-2xl md:text-4xl pb-4 text-[#030303] text-left font-bold pt-10">
             Why we are best?
           </div>
@@ -71,8 +80,9 @@ export default function AboutMain() {
             Everything you can do in a physical classroom you can do with eLearn
           </div>
           <div className="text-base pb-4 text-[#5E5E5E] text-left ">
-            Lorem ipsum spengen nyng att betredes. Pugisk ayna, deng med
-            preheten.
+            Lörem ipsum reass spengen nyng att betredes. Pugisk gyna, deng med
+            preheten. Homosade lafan. Or jyr obelt. Makror nidyda parapus rår.
+            Evis poteligen. Desår kontranas josk. Intrader bir.
           </div>
 
           <div className="py-4">

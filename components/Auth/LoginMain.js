@@ -32,9 +32,9 @@ export default function Login() {
                 Welcome Back
               </div>
               <div className="flex flex-row w-full justify-between pb-2">
-                <CustomImage src="/images/LoginFaceBtn.svg" className="cursor-pointer" onClick={()=>{Router.push('/')}}/>
-                <CustomImage src="/images/LoginGBtn.svg" className="cursor-pointer" onClick={()=>{Router.push('/')}}/>
-                <CustomImage src="/images/LoginTwiBtn.svg" className="cursor-pointer"onClick={()=>{Router.push('/')}} />
+                <CustomImage src="/images/LoginFaceBtn.svg" className="cursor-pointer" onClick={()=>{Router.push('/courses')}}/>
+                <CustomImage src="/images/LoginGBtn.svg" className="cursor-pointer" onClick={()=>{Router.push('/courses')}}/>
+                <CustomImage src="/images/LoginTwiBtn.svg" className="cursor-pointer"onClick={()=>{Router.push('/courses')}} />
               </div>
               <div className="pb-2">
                 <CustomImage src="/images/LoginOrImage.svg" />

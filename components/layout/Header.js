@@ -119,7 +119,7 @@ export default function Header({ color = false, ...props }) {
                 }`}
               >
                 Courses
-                <KeyboardArrowDownIcon style={{ color: "white" }} />
+                <KeyboardArrowDownIcon style={{ color: `${color ? "black" :"white"}` }} />
               </div>
               <Menu
                 id="basic-menu"

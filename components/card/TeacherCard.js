@@ -22,7 +22,7 @@ export default function TeacherCard({
   return (
     <div className="h-full w-full rounded-md border border-[#E7E7E7] bg-white shadow-md p-2">
       <div className="w-full">
-        <CustomImage src={imgsrc}></CustomImage>
+        <CustomImage src={imgsrc} className="w-full"></CustomImage>
       </div>
       <div className="text-3xl text-[#030303] text-center font-bold pt-8">
         {teacherName}
