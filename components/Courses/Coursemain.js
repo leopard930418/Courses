@@ -4,7 +4,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Pagination from "@mui/material/Pagination";
 import CustomImage from "../base/CustomImage";
 import CourseCard from "../card/CourseCard";
-import NavItem from "rsuite/esm/Nav/NavItem";
 
 export default function CourseMain() {
   const [buttonActive, setButtonActive] = useState();
