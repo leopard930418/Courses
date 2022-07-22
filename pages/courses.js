@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-import CourseMain from "../components/Courses/CourseMain";
 import JoinUs from "../components/Courses/JoinUs";
 import Faq from "../components/Courses/Faq";
+import CourseMain from "../components/Courses/Coursemain";
 
 export default function Courses() {
   return (
