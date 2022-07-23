@@ -61,7 +61,7 @@ export default function Instructors() {
       <Grid container spacing={2}>
         {InstructorData.map((items, index) =>
           showAll ? (
-            <Grid item lg={4} md={4} sm={12} xs={12}>
+            <Grid item lg={4} md={4} sm={12} xs={12} key={index}>
               <InstructorCard
                 avatarsrc={items.avatarsrc}
                 instructorName={items.instructorName}
@@ -72,7 +72,7 @@ export default function Instructors() {
             </Grid>
           ) : (
             index < 3 && (
-              <Grid item lg={4} md={4} sm={12} xs={12}>
+              <Grid item lg={4} md={4} sm={12} xs={12} key={index}>
                 <InstructorCard
                   avatarsrc={items.avatarsrc}
                   instructorName={items.instructorName}

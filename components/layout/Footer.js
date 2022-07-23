@@ -10,7 +10,7 @@ export default function Footer({ ...props }) {
           <div className="flex justify-center md:justify-start py-4">
             <CustomImage src="/images/logo.svg" className="h-16"></CustomImage>
           </div>
-          <div className="text-xl text-[#353535] break-words">
+          <div className="text-xl text-[#353535] text-center md:text-left break-words">
             Lorem ipsum makrov task vnade tasonde. Hemiskade. Lorem ipsum makrov
             task vnade tasonde. Hemiskade.
           </div>

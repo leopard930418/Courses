@@ -4,7 +4,7 @@ export default function CustomImage({
   src = "",
   title = "",
   alt = "",
-  width = "",
+  // width = "",
   ...props
 }) {
   return (
@@ -12,7 +12,7 @@ export default function CustomImage({
       src={src ?? ""}
       alt={alt || title}
       {...props}
-      style={{ width: `${width}`}}
+      // style={{ width: `${width}`}}
     />
   );
 }

@@ -95,7 +95,7 @@ export default function PopularCourses() {
         >
           {courseData.map((items, index) =>
             showAll ? (
-              <Grid item lg={4} md={4} sm={12} xs={12}>
+              <Grid item lg={4} md={4} sm={12} xs={12} key={index}>
                 <CourseCard
                   imgsrc={items.imgsrc}
                   chipsrc={items.chipsrc}
@@ -107,12 +107,11 @@ export default function PopularCourses() {
                   avatarsrc={items.avatarsrc}
                   instructorName={items.instructorName}
                   price={items.price}
-                  key={index}
                 />
               </Grid>
             ) : (
               index < 3 && (
-                <Grid item lg={4} md={4} sm={12} xs={12}>
+                <Grid item lg={4} md={4} sm={12} xs={12} key={index}>
                   <CourseCard
                     imgsrc={items.imgsrc}
                     chipsrc={items.chipsrc}
@@ -124,7 +123,6 @@ export default function PopularCourses() {
                     avatarsrc={items.avatarsrc}
                     instructorName={items.instructorName}
                     price={items.price}
-                    key={index}
                   />
                 </Grid>
               )
