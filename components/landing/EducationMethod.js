@@ -4,6 +4,26 @@ import CustomImage from "../base/CustomImage";
 import CustomText from "../base/CustomText";
 import EducationCard from "../card/EducationCard";
 export default function EducationMethod() {
+  const eduData = [
+    {
+      src: "/images/Icon1.svg",
+      title: "Expert Teacher",
+      description:
+        "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade mevatuledes ålavism. Pujan heren. Eudade panyren.",
+    },
+    {
+      src: "/images/Icon2.svg",
+      title: "Online Courses",
+      description:
+        "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade mevatuledes ålavism. Pujan heren. Eudade panyren.",
+    },
+    {
+      src: "/images/Icon3.svg",
+      title: "24/7 Support",
+      description:
+        "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade mevatuledes ålavism. Pujan heren. Eudade panyren.",
+    },
+  ];
   return (
     <div className="bg-[#2E6D48] h-full px-2 py-10 md:p-20">
       <div className="flex flex-col justify-center items-center pb-10">
@@ -15,27 +35,15 @@ export default function EducationMethod() {
         </div>
       </div>
       <Grid container spacing={4}>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <EducationCard
-            imgsrc="/images/Icon1.svg"
-            title="Expert Teacher"
-            description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-          />
-        </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <EducationCard
-            imgsrc="/images/Icon2.svg"
-            title="Online Courses"
-            description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-          />{" "}
-        </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <EducationCard
-            imgsrc={"/images/Icon3.svg"}
-            title="24/7 Support"
-            description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-          />{" "}
-        </Grid>
+        {eduData.map((item, index) => (
+          <Grid item lg={4} md={4} sm={12} xs={12} key={index}>
+            <EducationCard
+              imgsrc={item.src}
+              title={item.title}
+              description={item.description}
+            />
+          </Grid>
+        ))}
       </Grid>
     </div>
   );

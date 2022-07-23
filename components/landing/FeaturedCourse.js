@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CourseCard from "../card/CourseCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,6 +19,81 @@ export default function FeaturedCourse() {
       );
     },
   };
+  const [showAll, setShowAll] = useState(false);
+  const courseData = [
+    {
+      imgsrc: "/images/DesignCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Mathematics",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/WorkCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Programming",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar2.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/SystemsCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Relational Database",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar3.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/DesignCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Mathematics",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/WorkCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Programming",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar2.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/SystemsCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Relational Database",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar3.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+  ];
   return (
     <div className="bg-[#F5F5F5] h-full px-2 py-10 md:p-20">
       <div className=" pt-10">
@@ -29,122 +104,68 @@ export default function FeaturedCourse() {
       <div className="">
         {isPhoneMode ? (
           <div className="space-y-4">
-            <CourseCard
-              imgsrc="/images/DesignCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Mathematics"
-              description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar1.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
-            <CourseCard
-              imgsrc="/images/WorkCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Programming"
-              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar2.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
-            <CourseCard
-              imgsrc="/images/SystemsCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Relational Database"
-              description="cccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar3.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
+            {courseData.map((item, index) =>
+              showAll ? (
+                <CourseCard
+                  imgsrc={item.imgsrc}
+                  chipsrc={item.chipsrc}
+                  review={item.review}
+                  title={item.title}
+                  description={item.description}
+                  accessTime={item.accessTime}
+                  lecturesCount={item.lecturesCount}
+                  avatarsrc={item.avatarsrc}
+                  instructorName={item.instructorName}
+                  price={item.price}
+                  key={index}
+                />
+              ) : (
+                index < 3 && (
+                  <CourseCard
+                    imgsrc={item.imgsrc}
+                    chipsrc={item.chipsrc}
+                    review={item.review}
+                    title={item.title}
+                    description={item.description}
+                    accessTime={item.accessTime}
+                    lecturesCount={item.lecturesCount}
+                    avatarsrc={item.avatarsrc}
+                    instructorName={item.instructorName}
+                    price={item.price}
+                    key={index}
+                  />
+                )
+              )
+            )}
+           
             <div className="flex justify-center">
-              <button className="rounded-3xl bg-red-700 text-white py-2 px-4">
+              <button
+                className="rounded-3xl bg-red-700 text-white py-2 px-4"
+                onClick={() => {
+                  setShowAll(true);
+                }}
+              >
                 View All
               </button>
             </div>
           </div>
         ) : (
           <Slider {...settings}>
-            <CourseCard
-              imgsrc="/images/DesignCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Mathematics"
-              description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar1.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
-            <CourseCard
-              imgsrc="/images/WorkCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Programming"
-              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar2.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
-            <CourseCard
-              imgsrc="/images/SystemsCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Relational Database"
-              description="cccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar3.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
-            <CourseCard
-              imgsrc="/images/DesignCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Mathematics"
-              description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar1.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
-            <CourseCard
-              imgsrc="/images/WorkCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Programming"
-              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar2.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
-            <CourseCard
-              imgsrc="/images/SystemsCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Relational Database"
-              description="cccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar3.png"
-              instructorName="Julie Blees"
-              price={6.48}
-            />
+            {courseData.map((item, index) => (
+              <CourseCard
+                imgsrc={item.imgsrc}
+                chipsrc={item.chipsrc}
+                review={item.review}
+                title={item.title}
+                description={item.description}
+                accessTime={item.accessTime}
+                lecturesCount={item.lecturesCount}
+                avatarsrc={item.avatarsrc}
+                instructorName={item.instructorName}
+                price={item.price}
+                key={index}
+              />
+            ))}
           </Slider>
         )}
       </div>

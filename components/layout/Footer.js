@@ -5,7 +5,7 @@ import Router from "next/router";
 export default function Footer({ ...props }) {
   return (
     <>
-      <div className="w-full h-full bg-[#F5F5F5] p-4 md:p-12 flex flex-col md:flex-row">
+      <div className="w-full h-full bg-[#F5F5F5] p-4 md:px-12 flex flex-col md:flex-row">
         <div className="w-full md:w-1/3">
           <div className="flex justify-center md:justify-start py-4">
             <CustomImage src="/images/logo.svg" className="h-16"></CustomImage>
