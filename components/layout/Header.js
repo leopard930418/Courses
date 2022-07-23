@@ -9,7 +9,7 @@ import InputBase from "@mui/material/InputBase";
 import Router from "next/router";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Dropdown } from "rsuite";
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import Link from "next/link";
 
@@ -62,6 +62,16 @@ export default function Header({ color = false, ...props }) {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const [phoneMenuShow, setPhoneMenuShow] = useState(false);
+  const toggleDrawer = (show) => () => {
+    setPhoneMenuShow(show);
+  };
+  const navs = [
+    { to: "/courses", label: "Courses" },
+    { to: "/programs", label: "Programs" },
+    { to: "/", label: "Partnership" },
+  ];
   return (
     <div
       className={`fixed w-full ${
@@ -113,7 +123,7 @@ export default function Header({ color = false, ...props }) {
                 }`}
               >
                 Courses
-                <KeyboardArrowDownIcon style={{color:"white"}}/>
+                <KeyboardArrowDownIcon style={{ color: "white" }} />
               </div>
               <Menu
                 id="basic-menu"
@@ -196,12 +206,51 @@ export default function Header({ color = false, ...props }) {
           xs={4}
           sx={{ display: { xs: "block", md: "none" } }}
         >
-          <div className=" pr-2 flex justify-end">
+          <div
+            className=" pr-2 flex justify-end"
+            onClick={() => {
+              setPhoneMenuShow(!phoneMenuShow);
+              console.log("PhoneMenushow", phoneMenuShow);
+            }}
+          >
             <MenuIcon />
           </div>
         </Grid>
       </Grid>
       {/* </Container> */}
+      {phoneMenuShow == true ? (
+        // <Drawer open={phoneMenuShow} onClose={toggleDrawer(false)}>
+        <div className="fixed top-0 h-full w-full">
+          <div className="fixed bg-gray-100 h-screen w-full">
+            <div className="flex justify-end pr-4 py-3">
+              <CustomImage
+                src="/images/closeIcon.svg"
+                className="h-8"
+                onClick={toggleDrawer(false)}
+              ></CustomImage>
+            </div>
+            {navs.map((item, itemIndex) => (
+              <div
+                className="mx-4 py-4 border-b border-blue_gray border-opacity-10"
+                key={itemIndex}
+              >
+                <div
+                  onClick={() => {
+                    setPhoneMenuShow(!phoneMenuShow);
+                    Router.push(item.to);
+                  }}
+                >
+                  <div className="text-black text-lg text-left">
+                    {item?.label ?? ""}
+                  </div>
+                </div>
+                {/* <CustomImage src={border} className="w-full px-1 py-1"></CustomImage> */}
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : // </Drawer>
+      null}
     </div>
   );
 }
