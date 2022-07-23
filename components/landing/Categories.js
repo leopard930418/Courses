@@ -8,13 +8,13 @@ import { Grid } from "@mui/material";
 export default function Categories() {
 
   return (
-    <div className="bg-[#F5F5F5] h-full p-2 md:p-12">
+    <div className="bg-[#F5F5F5] h-full px-2 py-10 md:p-20">
       <div className=" pt-10">
         <div className="text-2xl md:text-4xl pb-10 text-black text-center md:text-left font-bold">
           Topics Categories
         </div>
       </div>
-      <div className="">
+      <div className="px-8 md:px-0">
         <Grid container >
           <Grid item lg={3} md={3} sm={12} xs={12}>
             <CustomImage src="/images/DesignCategory.svg" className="w-full h-full"></CustomImage>

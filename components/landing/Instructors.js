@@ -4,7 +4,7 @@ import EducationCard from "../card/EducationCard";
 import InstructorCard from "../card/InstructorCard";
 export default function Instructors() {
   return (
-    <div className="bg-[#D1222A] h-full px-2 md:px-12 pt-12">
+    <div className="bg-[#D1222A] h-full px-2 py-12 md:p-20">
       <div className="flex flex-col justify-center items-center pb-10">
         <div className="text-2xl md:text-4xl pb-4 text-white text-center bold">
           Instructors that are Most Popular{" "}
@@ -69,8 +69,8 @@ export default function Instructors() {
           />
         </Grid>
       </Grid>
-      <div className="py-8 flex justify-center">
-        <button className="rounded-3xl bg-black text-white py-2 px-4">
+      <div className="py-12 flex justify-center">
+        <button className="rounded-3xl bg-black text-white py-2 px-6">
           View All
         </button>
       </div>

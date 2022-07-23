@@ -1,5 +1,5 @@
-import { Container, Drawer, Grid } from "@mui/material";
-import { useEffect, useState } from "react";
+import { Container, Drawer, Grid, Menu, MenuItem, Button } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import CustomImage from "../base/CustomImage";
 import CustomText from "../base/CustomText";
 import ReactSearchBox from "react-search-box";
@@ -8,6 +8,8 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Router from "next/router";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Dropdown } from "rsuite";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import Link from "next/link";
 
@@ -52,19 +54,27 @@ export default function Header({ color = false, ...props }) {
       },
     },
   }));
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <div
       className={`fixed w-full ${
         color ? "bg-white" : "bg-white md:bg-red-700"
-      } z-50 py-2`}
+      } z-50 py-2 px-0 md:px-20`}
     >
       {/* <Container sx={{ maxWidth: 1440 }}> */}
       <Grid container className="items-center">
-        <Grid item lg={2} md={2} sm={2} xs={2}>
-          <div className="ml-0 md:ml-10">
+        <Grid item lg={1} md={1} sm={2} xs={2}>
+          <div className="">
             <CustomImage
               src={"/images/logo.svg"}
-              className="h-16 cursor-pointer"
+              className="h-20 cursor-pointer"
               onClick={() => {
                 Router.push("/");
               }}
@@ -84,8 +94,8 @@ export default function Header({ color = false, ...props }) {
         </Grid>
         <Grid
           item
-          lg={4}
-          md={4}
+          lg={5}
+          md={5}
           // sm={0}
           // xs={0}
           sx={{ display: { xs: "none", md: "block" } }}
@@ -93,15 +103,44 @@ export default function Header({ color = false, ...props }) {
           <Grid container spacing={3} justifyContent="space-around">
             <Grid item>
               <div
-                onClick={() => {
-                  Router.push("/courses");
-                }}
+                id="basic-button"
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
                 className={`cursor-pointer ${
                   color ? "text-black" : "text-white"
                 }`}
               >
                 Courses
+                <KeyboardArrowDownIcon style={{color:"white"}}/>
               </div>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                disableScrollLock={true}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <MenuItem
+                  onClick={() => {
+                    handleClose, Router.push("/event");
+                  }}
+                >
+                  event
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    handleClose, Router.push("/history");
+                  }}
+                >
+                  history
+                </MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
             </Grid>
             <Grid item>
               <div
@@ -138,7 +177,7 @@ export default function Header({ color = false, ...props }) {
           xs={4}
           sx={{ display: { xs: "none", md: "block" } }}
         >
-          <div className=" mr-0 md:mr-10 flex justify-end">
+          <div className="flex justify-end">
             <button
               className="rounded-3xl bg-black text-white py-2 px-4"
               onClick={() => {

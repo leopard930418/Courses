@@ -7,7 +7,7 @@ import Router from "next/router";
 export default function Welcome() {
   return (
     <>
-      <div className="bg-red-700 h-90vh md:h-screen px-2 md:px-10">
+      <div className="bg-red-700 h-90vh md:h-full px-2 md:px-20">
         <Grid
           container
           direction="row"
@@ -52,7 +52,7 @@ export default function Welcome() {
           </Grid>
         </Grid>
       </div>
-      <div className="bg-white h-20 flex justify-center items-center">
+      <div className="bg-white h-28 flex justify-center items-center">
         <Grid
           container
           direction="row"
@@ -83,7 +83,7 @@ export default function Welcome() {
               ></CustomImage>
             </div>
           </Grid>
-          <Grid item lg={2} md={2} sm={4} xs={4}>
+          <Grid item lg={2} md={2} sm={4} xs={4} sx={{ display: { xs: "none", md: "block" } }}>
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company4.svg"}
@@ -91,7 +91,7 @@ export default function Welcome() {
               ></CustomImage>
             </div>
           </Grid>
-          <Grid item lg={2} md={2} sm={4} xs={4}>
+          <Grid item lg={2} md={2} sm={4} xs={4} sx={{ display: { xs: "none", md: "block" } }}>
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company5.svg"}
@@ -99,7 +99,7 @@ export default function Welcome() {
               ></CustomImage>
             </div>
           </Grid>
-          <Grid item lg={2} md={2} sm={4} xs={4}>
+          <Grid item lg={2} md={2} sm={4} xs={4} sx={{ display: { xs: "none", md: "block" } }}>
             <div className="flex justify-center items-center">
               <CustomImage
                 src={"/images/company6.svg"}

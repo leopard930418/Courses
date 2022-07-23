@@ -5,7 +5,7 @@ import CustomText from "../base/CustomText";
 
 export default function Welcome() {
   return (
-    <div className="bg-red-700 h-90vh">
+    <div className="bg-red-700">
       
       <Grid
         container

@@ -11,7 +11,7 @@ import CustomImage from "../base/CustomImage";
 export default function JoinUs() {
   return (
     <div className="bg-[#F5F5F5] h-full p-2 md:p-12">
-      <div className="bg-[#2E6D48] w-full px-12 pt-12 rounded-md flex flex-col md:flex-row">
+      <div className="bg-[#2E6D48] w-full px-2 py-10 md:p-20 rounded-md flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 flex flex-col space-y-4">
           <div className="text-2xl md:text-4xl pb-4 text-white text-left font-bold">
             Change your Learning
