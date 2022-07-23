@@ -104,34 +104,34 @@ export default function FeaturedCourse() {
       <div className="">
         {isPhoneMode ? (
           <div className="space-y-4">
-            {courseData.map((item, index) =>
+            {courseData.map((items, index) =>
               showAll ? (
                 <CourseCard
-                  imgsrc={item.imgsrc}
-                  chipsrc={item.chipsrc}
-                  review={item.review}
-                  title={item.title}
-                  description={item.description}
-                  accessTime={item.accessTime}
-                  lecturesCount={item.lecturesCount}
-                  avatarsrc={item.avatarsrc}
-                  instructorName={item.instructorName}
-                  price={item.price}
+                  imgsrc={items.imgsrc}
+                  chipsrc={items.chipsrc}
+                  review={items.review}
+                  title={items.title}
+                  description={items.description}
+                  accessTime={items.accessTime}
+                  lecturesCount={items.lecturesCount}
+                  avatarsrc={items.avatarsrc}
+                  instructorName={items.instructorName}
+                  price={items.price}
                   key={index}
                 />
               ) : (
                 index < 3 && (
                   <CourseCard
-                    imgsrc={item.imgsrc}
-                    chipsrc={item.chipsrc}
-                    review={item.review}
-                    title={item.title}
-                    description={item.description}
-                    accessTime={item.accessTime}
-                    lecturesCount={item.lecturesCount}
-                    avatarsrc={item.avatarsrc}
-                    instructorName={item.instructorName}
-                    price={item.price}
+                    imgsrc={items.imgsrc}
+                    chipsrc={items.chipsrc}
+                    review={items.review}
+                    title={items.title}
+                    description={items.description}
+                    accessTime={items.accessTime}
+                    lecturesCount={items.lecturesCount}
+                    avatarsrc={items.avatarsrc}
+                    instructorName={items.instructorName}
+                    price={items.price}
                     key={index}
                   />
                 )
@@ -151,18 +151,18 @@ export default function FeaturedCourse() {
           </div>
         ) : (
           <Slider {...settings}>
-            {courseData.map((item, index) => (
+            {courseData.map((items, index) => (
               <CourseCard
-                imgsrc={item.imgsrc}
-                chipsrc={item.chipsrc}
-                review={item.review}
-                title={item.title}
-                description={item.description}
-                accessTime={item.accessTime}
-                lecturesCount={item.lecturesCount}
-                avatarsrc={item.avatarsrc}
-                instructorName={item.instructorName}
-                price={item.price}
+                imgsrc={items.imgsrc}
+                chipsrc={items.chipsrc}
+                review={items.review}
+                title={items.title}
+                description={items.description}
+                accessTime={items.accessTime}
+                lecturesCount={items.lecturesCount}
+                avatarsrc={items.avatarsrc}
+                instructorName={items.instructorName}
+                price={items.price}
                 key={index}
               />
             ))}

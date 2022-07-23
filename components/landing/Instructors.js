@@ -1,8 +1,53 @@
 import { Grid } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import EducationCard from "../card/EducationCard";
 import InstructorCard from "../card/InstructorCard";
 export default function Instructors() {
+  const InstructorData = [
+    {
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      role: "Design and Development",
+      visitedCount: 152232,
+      courseCount: 22,
+    },
+    {
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      role: "Design and Development",
+      visitedCount: 152232,
+      courseCount: 22,
+    },
+    {
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      role: "Design and Development",
+      visitedCount: 152232,
+      courseCount: 22,
+    },
+    {
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      role: "Design and Development",
+      visitedCount: 152232,
+      courseCount: 22,
+    },
+    {
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      role: "Design and Development",
+      visitedCount: 152232,
+      courseCount: 22,
+    },
+    {
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      role: "Design and Development",
+      visitedCount: 152232,
+      courseCount: 22,
+    },
+  ];
+  const [showAll, setShowAll] = useState(false);
   return (
     <div className="bg-[#D1222A] h-full px-2 py-12 md:p-20">
       <div className="flex flex-col justify-center items-center pb-10">
@@ -14,63 +59,39 @@ export default function Instructors() {
         </div>
       </div>
       <Grid container spacing={2}>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <InstructorCard
-            avatarsrc="/images/avatar1.png"
-            instructorName="Julie Blees"
-            role="Design and Development"
-            visitedCount={152232}
-            courseCount={22}
-          />
-        </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <InstructorCard
-            avatarsrc="/images/avatar1.png"
-            instructorName="Julie Blees"
-            role="Design and Development"
-            visitedCount={152232}
-            courseCount={22}
-          />
-        </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <InstructorCard
-            avatarsrc="/images/avatar1.png"
-            instructorName="Julie Blees"
-            role="Design and Development"
-            visitedCount={152232}
-            courseCount={22}
-          />
-        </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <InstructorCard
-            avatarsrc="/images/avatar1.png"
-            instructorName="Julie Blees"
-            role="Design and Development"
-            visitedCount={152232}
-            courseCount={22}
-          />
-        </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <InstructorCard
-            avatarsrc="/images/avatar1.png"
-            instructorName="Julie Blees"
-            role="Design and Development"
-            visitedCount={152232}
-            courseCount={22}
-          />
-        </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <InstructorCard
-            avatarsrc="/images/avatar1.png"
-            instructorName="Julie Blees"
-            role="Design and Development"
-            visitedCount={152232}
-            courseCount={22}
-          />
-        </Grid>
+        {InstructorData.map((items, index) =>
+          showAll ? (
+            <Grid item lg={4} md={4} sm={12} xs={12}>
+              <InstructorCard
+                avatarsrc={items.avatarsrc}
+                instructorName={items.instructorName}
+                role={items.role}
+                visitedCount={items.visitedCount}
+                courseCount={items.courseCount}
+              />
+            </Grid>
+          ) : (
+            index < 3 && (
+              <Grid item lg={4} md={4} sm={12} xs={12}>
+                <InstructorCard
+                  avatarsrc={items.avatarsrc}
+                  instructorName={items.instructorName}
+                  role={items.role}
+                  visitedCount={items.visitedCount}
+                  courseCount={items.courseCount}
+                />
+              </Grid>
+            )
+          )
+        )}
       </Grid>
       <div className="py-12 flex justify-center">
-        <button className="rounded-3xl bg-black text-white py-2 px-6">
+        <button
+          className="rounded-3xl bg-black text-white py-2 px-6"
+          onClick={() => {
+            setShowAll(true);
+          }}
+        >
           View All
         </button>
       </div>

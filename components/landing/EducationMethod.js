@@ -1,7 +1,5 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import CustomImage from "../base/CustomImage";
-import CustomText from "../base/CustomText";
 import EducationCard from "../card/EducationCard";
 export default function EducationMethod() {
   const eduData = [
@@ -35,12 +33,12 @@ export default function EducationMethod() {
         </div>
       </div>
       <Grid container spacing={4}>
-        {eduData.map((item, index) => (
+        {eduData.map((items, index) => (
           <Grid item lg={4} md={4} sm={12} xs={12} key={index}>
             <EducationCard
-              imgsrc={item.src}
-              title={item.title}
-              description={item.description}
+              imgsrc={items.src}
+              title={items.title}
+              description={items.description}
             />
           </Grid>
         ))}
