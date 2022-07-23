@@ -4,6 +4,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Pagination from "@mui/material/Pagination";
 import CustomImage from "../base/CustomImage";
 import CourseCard from "../card/CourseCard";
+import NavItem from "rsuite/esm/Nav/NavItem";
 
 export default function Coursemain() {
   const [buttonActive, setButtonActive] = useState();
@@ -11,11 +12,84 @@ export default function Coursemain() {
     setButtonActive(num);
   };
   const isPhoneMode = useMediaQuery("(max-width:600px)");
-
+  const courseData = [
+    {
+      imgsrc: "/images/DesignCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Mathematics",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/WorkCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Programming",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar2.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/SystemsCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Relational Database",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar3.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/DesignCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Mathematics",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar1.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/WorkCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Programming",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar2.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+    {
+      imgsrc: "/images/SystemsCourse.svg",
+      chipsrc: "/images/Designchip.svg",
+      review: 5,
+      title: "Relational Database",
+      description: "Lörem ipsum makrov tåsk vanade tåsönde. Hemiskade",
+      accessTime: "12hr 42mins",
+      lecturesCount: 43,
+      avatarsrc: "/images/avatar3.png",
+      instructorName: "Julie Blees",
+      price: 6.38,
+    },
+  ];
   return (
     <>
       <div className="w-full h-full pt-20">
-        <CustomImage src="/images/Courseheader.svg" className="w-full"/>
+        <CustomImage src="/images/Courseheader.svg" className="w-full" />
       </div>
       <div className="w-full h-full p-4 md:p-12 flex flex-col-reverse md:flex-row">
         <div className="w-full md:w-2/3">
@@ -66,84 +140,22 @@ export default function Coursemain() {
             </button>
           </div>
           <div className="flex flex-col space-y-4">
-            <CourseCard
-              imgsrc="/images/DesignCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Mathematics"
-              description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar1.png"
-              instructorName="Julie Blees"
-              price={6.48}
-              isHorizontal={isPhoneMode ? false : true}
-            />
-            <CourseCard
-              imgsrc="/images/WorkCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Programming"
-              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar2.png"
-              instructorName="Julie Blees"
-              price={6.48}
-              isHorizontal={isPhoneMode ? false : true}
-            />
-            <CourseCard
-              imgsrc="/images/SystemsCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Relational Database"
-              description="cccccccccccccccccccccccccccccccc"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar3.png"
-              instructorName="Julie Blees"
-              price={6.48}
-              isHorizontal={isPhoneMode ? false : true}
-            />
-            <CourseCard
-              imgsrc="/images/DesignCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Mathematics"
-              description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar1.png"
-              instructorName="Julie Blees"
-              price={6.48}
-              isHorizontal={isPhoneMode ? false : true}
-            />
-            <CourseCard
-              imgsrc="/images/WorkCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Programming"
-              description="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar2.png"
-              instructorName="Julie Blees"
-              price={6.48}
-              isHorizontal={isPhoneMode ? false : true}
-            />
-            <CourseCard
-              imgsrc="/images/SystemsCourse.svg"
-              chipsrc="/images/Designchip.svg"
-              review={5}
-              title="Relational Database"
-              description="cccccccccccccccccccccccccccccccc"
-              accessTime="12hr 42mins"
-              lecturesCount={43}
-              avatarsrc="/images/avatar3.png"
-              instructorName="Julie Blees"
-              price={6.48}
-              isHorizontal={isPhoneMode ? false : true}
-            />
+            {courseData.map((items, index) => (
+              <CourseCard
+                imgsrc={items.imgsrc}
+                chipsrc={items.chipsrc}
+                review={items.review}
+                title={items.title}
+                description={items.description}
+                accessTime={items.accessTime}
+                lecturesCount={items.lecturesCount}
+                avatarsrc={items.avatarsrc}
+                instructorName={items.instructorName}
+                price={items.price}
+                isHorizontal={isPhoneMode ? false : true}
+                key={index}
+              />
+            ))}
           </div>
           <div className="flex justify-end py-4">
             <Pagination count={10} variant="outlined" color="primary" />
@@ -172,10 +184,52 @@ export default function Coursemain() {
             professional careers
           </div>
           <div className="rounded-lg bg-[#2E6D48] bg-opacity-10 p-8">
-            <div className="text-2xl font-bold text-[#030303]">
+            <div className="text-2xl font-bold text-[#030303] pb-4">
               All Courses Include
             </div>
-            <FormGroup>
+            <div className="flex flex-col space-y-4">
+              <div className="flex flex-row items-center">
+                <div>
+                  <CustomImage src="/images/checkIcon.svg"></CustomImage>
+                </div>
+                <div className="text-[#030303] text-base md:text-xl pl-4 ">
+                  100% online
+                </div>
+              </div>
+              <div className="flex flex-row items-center">
+                <div>
+                  <CustomImage src="/images/checkIcon.svg"></CustomImage>
+                </div>
+                <div className="text-[#030303] text-base md:text-xl pl-4">
+                  Qualified Instructors
+                </div>
+              </div>
+              <div className="flex flex-row items-center">
+                <div>
+                  <CustomImage src="/images/checkIcon.svg"></CustomImage>
+                </div>
+                <div className="text-[#030303] text-base md:text-xl pl-4">
+                  Top Notch Course
+                </div>
+              </div>
+              <div className="flex flex-row items-center">
+                <div>
+                  <CustomImage src="/images/checkIcon.svg"></CustomImage>
+                </div>
+                <div className="text-[#030303] text-base md:text-xl pl-4">
+                  100% Refund Policy
+                </div>
+              </div>
+              <div className="flex flex-row items-center">
+                <div>
+                  <CustomImage src="/images/checkIcon.svg"></CustomImage>
+                </div>
+                <div className="text-[#030303] text-base md:text-xl pl-4">
+                  Guaranteed Job
+                </div>
+              </div>
+            </div>
+            {/* <FormGroup>
               <FormControlLabel
                 control={<Checkbox defaultChecked />}
                 label="100% online"
@@ -209,7 +263,7 @@ export default function Coursemain() {
                 label="Guaranteed Job"
                 className="text-[#030303]"
               />
-            </FormGroup>
+            </FormGroup> */}
           </div>
         </div>
       </div>

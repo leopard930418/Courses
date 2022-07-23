@@ -7,7 +7,7 @@ import Router from "next/router";
 export default function Welcome() {
   return (
     <>
-      <div className="bg-red-700 h-90vh md:h-full px-2 md:px-20">
+      <div className="bg-red-700 h-90vh md:h-full px-2 md:p-20">
         <Grid
           container
           direction="row"
@@ -47,7 +47,7 @@ export default function Welcome() {
           </Grid>
           <Grid item lg={5} md={5} sm={12} xs={12}>
             <div className="flex justify-center">
-              <CustomImage src={"/images/intro.svg"}></CustomImage>
+              <CustomImage src={"/images/intro.svg"} className="h-[500px]"></CustomImage>
             </div>
           </Grid>
         </Grid>

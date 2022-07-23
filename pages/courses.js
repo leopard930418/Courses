@@ -16,9 +16,9 @@ export default function Courses() {
       <Header color />
       <Coursemain />
       <JoinUs
-        imgsrc="/images/CoursesJonUs.svg"
+        imgsrc="/images/CoursesJoinUs.svg"
         title="Want to Control your Future?"
-        description="Loem ipsum makcov task vanade Hemiskade mevatuledes"
+        description="Lörem ipsum reass spengen nyng att betredes. Pugisk gyna, deng med preheten. Homosade lafan. Or jyr obelt. Makror nidyda parapus rår. Evis poteligen. Desår kontranas josk. Intrader bir. "
         btncolor="black"
       />
       <Faq />
