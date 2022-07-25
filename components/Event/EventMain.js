@@ -14,8 +14,8 @@ export default function EventMain() {
           className="w-full"
         />
       </div>
-      <div className="w-full h-full p-4 md:p-12 flex flex-col md:flex-row">
-        <div className="w-full md:w-2/3 flex flex-col px-0 md:px-8">
+      <div className="w-full h-full p-4 md:p-20 flex flex-col md:flex-row">
+        <div className="w-full md:w-2/3 flex flex-col">
           <div className="text-3xl md:text-5xl font-bold text-black pb-4">
             Become a product manager learn the Skills & job.
           </div>
@@ -26,18 +26,18 @@ export default function EventMain() {
               </Stack>
             </div>
             <div className="flex flex-col px-2 md:px-4">
-              <div className="text-[#5E5E5E] text-xs">Teacher</div>
-              <div className="text-[#030303] text-md font-bold">Elon Gated</div>
+              <div className="text-[#5E5E5E] text-[8px] md:text-xs">Teacher</div>
+              <div className="text-[#030303] text-[10px] md:text-sm font-bold">Elon Gated</div>
             </div>
             <div className="flex flex-col px-2 md:px-4">
-              <div className="text-[#5E5E5E] text-xs">Last Update:</div>
-              <div className="text-[#030303] text-md font-bold">
+              <div className="text-[#5E5E5E] text-[8px] md:text-xs">Last Update:</div>
+              <div className="text-[#030303] text-[10px] md:text-sm font-bold">
                 July 24, 2022
               </div>
             </div>
             <div className="flex flex-col px-2 md:px-4">
-              <div className="text-[#5E5E5E] text-xs">Location:</div>
-              <div className="text-[#030303] text-md font-bold">
+              <div className="text-[#5E5E5E] text-[8px] md:text-xs">Location:</div>
+              <div className="text-[#030303] text-[10px] md:text-sm font-bold">
                 New York, TX 82760, US:
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function EventMain() {
             non-characteristic words etc.
           </div>
         </div>
-        <div className="w-full md:w-1/3 px-8">
+        <div className="w-full md:w-1/3 px-4 md:px-8">
           <div className="border border-[#E7E7E7] rounded-md shadow-md">
             <div className="p-8 flex flex-col">
               <div className="flex flex-row justify-between items-center pb-8">
@@ -99,7 +99,7 @@ export default function EventMain() {
         </div>
       </div>
       <div className="w-full h-full p-4 md:p-20 flex flex-col-reverse md:flex-row ">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 pr-0 md:pr-20">
           <div className="text-2xl md:text-4xl text-[#030303] font-bold">
             RESEARCH-PRACTICE PARTNERSHIPS
           </div>
@@ -122,11 +122,11 @@ export default function EventMain() {
           </div>
         </div>
         <div className="w-full md:w-1/2 px-2 md:pl-8 flex justify-end">
-          <CustomImage src="/images/EventImage1.svg" />
+          <CustomImage src="/images/EventImage1.svg" className="w-full"/>
         </div>
       </div>
       <div className="w-full h-full p-4 md:p-20 flex flex-col-reverse md:flex-row-reverse ">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 pl-0 md:pl-20">
           <div className="text-2xl md:text-4xl text-[#030303] font-bold">
             REPORTS & BRIEFS
           </div>
@@ -148,8 +148,8 @@ export default function EventMain() {
             </button>
           </div>
         </div>
-        <div className="w-full md:w-1/2 px-2 md:pr-8 flex justify-start">
-          <CustomImage src="/images/EventImage1.svg" />
+        <div className="w-full md:w-1/2 px-2 flex justify-start">
+          <CustomImage src="/images/EventImage1.svg" className="w-full" />
         </div>
       </div>
       <div className="bg-[#D1222A] h-full">
@@ -157,8 +157,8 @@ export default function EventMain() {
           <div className="w-full md:w-1/2 flex justify-center">
             <CustomImage src="/images/EventImage2.svg" />
           </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center">
-            <div className="flex flex-col items-center md:items-start pt-10 md:pt-0">
+          <div className="w-full md:w-1/2 flex justify-center items-center px-0 md:px-20">
+            <div className="flex flex-col items-center md:items-start pt-10 md:pt-0 ">
               <div className="text-2xl md:text-4xl pb-4 text-white text-center md:text-left bold">
                 Are you interested in becoming <br/>an instructor?
               </div>

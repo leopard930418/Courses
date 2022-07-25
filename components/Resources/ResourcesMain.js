@@ -16,8 +16,8 @@ export default function ResourcesMain() {
           className="w-full"
         />
       </div>
-      <div className="w-full h-full p-4 md:p-12 flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 flex flex-col p-2 md:p-8">
+      <div className="w-full h-full p-4 md:p-20 flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 flex flex-col">
           <div className="text-base text-[#D1222A] text-center md:text-left">
             Few Words of
           </div>
@@ -39,7 +39,7 @@ export default function ResourcesMain() {
           </div>
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-end">
-          <div className="p-8 w-full md:w-5/6 ">
+          <div className="w-full md:w-5/6 ">
             <div className="py-4">
               <CustomImage
                 src="/images/ResourcesImage2.svg"
@@ -53,7 +53,7 @@ export default function ResourcesMain() {
               READ MORE
             </div>
           </div>
-          <div className="p-8 w-full md:w-5/6 ">
+          <div className="w-full md:w-5/6 ">
             <div className="py-4">
               <CustomImage
                 src="/images/ResourcesImage3.svg"

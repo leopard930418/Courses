@@ -11,76 +11,67 @@ export default function Faq() {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+  const faqData = [
+    {
+      question: "Question number 01 goes in here?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A risus tellus diam lectus. Semper enim, lorem nisl, et. Augue morbi lacus, suspendisse enim. Vitae non nam ac ",
+    },
+    {
+      question: "Question number 02 goes in here?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A risus tellus diam lectus. Semper enim, lorem nisl, et. Augue morbi lacus, suspendisse enim. Vitae non nam ac ",
+    },
+    {
+      question: "Question number 03 goes in here?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A risus tellus diam lectus. Semper enim, lorem nisl, et. Augue morbi lacus, suspendisse enim. Vitae non nam ac ",
+    },
+    {
+      question: "Question number 04 goes in here?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A risus tellus diam lectus. Semper enim, lorem nisl, et. Augue morbi lacus, suspendisse enim. Vitae non nam ac ",
+    },
+    {
+      question: "Question number 05 goes in here?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A risus tellus diam lectus. Semper enim, lorem nisl, et. Augue morbi lacus, suspendisse enim. Vitae non nam ac ",
+    },
+    {
+      question: "Question number 06 goes in here?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A risus tellus diam lectus. Semper enim, lorem nisl, et. Augue morbi lacus, suspendisse enim. Vitae non nam ac ",
+    },
+  ];
   return (
     <div className="bg-[#F5F5F5] h-full p-2 md:p-8 flex flex-col items-center ">
       <div className="text-2xl md:text-4xl py-4 text-[#231F20] text-center font-bold">
         FAQ
       </div>
       <div className="w-full md:w-2/3">
-        <Accordion
-          expanded={expanded === "panel1"}
-          onChange={handleChange("panel1")}
-          className="text-base font-bold text-[#030303]  text-left bg-[#EAF0ED] shadow-none"
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1bh-content"
-            id="panel1bh-header"
+        {faqData.map((items, index) => (
+          <Accordion
+            expanded={expanded === `{panel${index + 1}}`}
+            onChange={handleChange(`{panel${index + 1}}`)}
+            className="text-base font-bold text-[#030303]  text-left bg-[#EAF0ED] shadow-none"
+            key={index}
           >
-            <Typography sx={{ color: "text.secondary" }}>
-              I am an accordion
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-              feugiat. Aliquam eget maximus est, id dignissim quam.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          expanded={expanded === "panel2"}
-          onChange={handleChange("panel2")}
-          className="text-base font-bold text-[#030303]  text-left bg-[#EAF0ED] shadow-none"
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2bh-content"
-            id="panel2bh-header"
-          >
-            <Typography sx={{ color: "text.secondary" }}>
-              You are currently not an owner
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Donec placerat, lectus sed mattis semper, neque lectus feugiat
-              lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-              laoreet laoreet.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          expanded={expanded === "panel3"}
-          onChange={handleChange("panel3")}
-          className="text-base font-bold text-[#030303]  text-left bg-[#EAF0ED] shadow-none"
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel3bh-content"
-            id="panel3bh-header"
-          >
-            <Typography sx={{ color: "text.secondary" }}>
-              Filtering has been entirely disabled for whole web server
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-              sit amet egestas eros, vitae egestas augue. Duis vel est augue.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography sx={{ color: "text.secondary" }}>
+                {items.question}
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+               {items.answer}
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        ))}
       </div>
     </div>
   );

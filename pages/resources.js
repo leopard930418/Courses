@@ -3,7 +3,6 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import ResourcesMain from "../components/Resources/ResourcesMain";
 
-
 export default function Resources() {
   return (
     <div className="bg-[#F5F5F5]">
@@ -13,7 +12,7 @@ export default function Resources() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <Header color />
-        <ResourcesMain />
+      <ResourcesMain />
       <Footer />
     </div>
   );

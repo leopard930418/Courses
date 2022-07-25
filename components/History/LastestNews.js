@@ -20,10 +20,10 @@ export default function LastestNews() {
           <div className="flex flex-col md:flex-row space-x-0 md:space-x-8">
             <div className="w-full md:w-5/12 flex flex-col ">
               <div>
-                <CustomImage src="/images/HistoryImage5.svg" />
+                <CustomImage src="/images/HistoryImage5.svg" className="w-full"/>
               </div>
               <div className="py-8">
-                <button className="rounded-3xl bg-red-700 text-white py-2 px-4">
+                <button className="rounded-3xl bg-red-700 text-white py-2 px-6">
                   NEWS
                 </button>
               </div>

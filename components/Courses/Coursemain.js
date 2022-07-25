@@ -87,7 +87,10 @@ export default function CourseMain() {
   return (
     <>
       <div className="w-full h-full pt-20">
-        <CustomImage src="/images/Courseheader.svg" className="w-full" />
+        <CustomImage
+          src={`/images/CourseHeader${isPhoneMode ? "M" : ""}.svg`}
+          className="w-full"
+        />
       </div>
       <div className="w-full h-full p-4 md:p-12 flex flex-col-reverse md:flex-row">
         <div className="w-full md:w-2/3">

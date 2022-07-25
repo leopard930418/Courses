@@ -19,8 +19,8 @@ export default function ProgramsMain() {
       </div>
 
       <div className="flex flex-col md:flex-row p-2 md:p-20">
-        <div className="w-full md:w-1/2">
-          <CustomImage src="/images/ProgramsImage1M.svg"></CustomImage>
+        <div className="w-full md:w-1/2 pr-0 md:pr-20">
+          <CustomImage src="/images/ProgramsImage1M.svg" className="w-full"></CustomImage>
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center space-y-4">
           <div className="text-2xl md:text-4xl pb-4 text-[#030303] text-center md:text-left font-bold pt-10">
@@ -39,9 +39,9 @@ export default function ProgramsMain() {
         </div>
       </div>
       <div className="flex flex-col p-2 md:p-20">
-        <div className="flex flex-col md:flex-row space-x-0 md:space-x-8">
-          <div className="w-full md:w-1/2 flex flex-col">
-            <div className="text-2xl md:text-4xl pb-4 md:pb-10 text-[#030303] text-left  font-bold">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 flex flex-col pr-0 md:pr-20">
+            <div className="text-2xl md:text-4xl pb-4 md:pb-16 text-[#030303] text-left  font-bold">
               Our Few Programs
             </div>
             <ProgramsCard
@@ -53,7 +53,7 @@ export default function ProgramsMain() {
           </div>
           <div className="w-full md:w-1/2 flex flex-col ">
             <div>
-              <CustomImage src="/images/ProgramsImage2.svg" />
+              <CustomImage src="/images/ProgramsImage2.svg" className="w-full" />
             </div>
           </div>
         </div>

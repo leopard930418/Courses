@@ -52,7 +52,7 @@ export default function OurTeacher() {
                 imgsrc={items.imgsrc}
                 teacherName={items.teacherName}
                 description={items.description}
-                // loading
+                loading
               />
             </Grid>
           ))}
