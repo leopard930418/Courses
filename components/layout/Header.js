@@ -1,4 +1,4 @@
-import {Grid, Menu, MenuItem, } from "@mui/material";
+import { Grid, Menu, MenuItem } from "@mui/material";
 import React, { useState } from "react";
 import CustomImage from "../base/CustomImage";
 import SearchIcon from "@mui/icons-material/Search";
@@ -7,7 +7,6 @@ import InputBase from "@mui/material/InputBase";
 import Router from "next/router";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-
 
 export default function Header({ color = false, ...props }) {
   const Search = styled("div")(({ theme }) => ({
@@ -52,6 +51,7 @@ export default function Header({ color = false, ...props }) {
   }));
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  console.log("leopard test anchorE1",anchorEl,open)
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -119,7 +119,9 @@ export default function Header({ color = false, ...props }) {
                 }`}
               >
                 Courses
-                <KeyboardArrowDownIcon style={{ color: `${color ? "black" :"white"}` }} />
+                <KeyboardArrowDownIcon
+                  style={{ color: `${color ? "black" : "white"}` }}
+                />
               </div>
               <Menu
                 id="basic-menu"
@@ -145,7 +147,6 @@ export default function Header({ color = false, ...props }) {
                 >
                   history
                 </MenuItem>
-                <MenuItem onClick={handleClose}>Logout</MenuItem>
               </Menu>
             </Grid>
             <Grid item>
@@ -159,6 +160,31 @@ export default function Header({ color = false, ...props }) {
               >
                 Programs
               </div>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                disableScrollLock={true}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <MenuItem
+                  onClick={() => {
+                    handleClose, Router.push("/event");
+                  }}
+                >
+                  resources
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    handleClose, Router.push("/history");
+                  }}
+                >
+                  programs
+                </MenuItem>
+              </Menu>
             </Grid>
             <Grid item>
               <div

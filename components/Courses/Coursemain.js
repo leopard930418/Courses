@@ -3,6 +3,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Pagination from "@mui/material/Pagination";
 import CustomImage from "../base/CustomImage";
 import CourseCard from "../card/CourseCard";
+import ColumnChart from "../base/ColumnChart";
 
 export default function CourseMain() {
   const [buttonActive, setButtonActive] = useState();
@@ -92,7 +93,8 @@ export default function CourseMain() {
           className="w-full"
         />
       </div>
-      <div className="w-full h-full p-4 md:p-12 flex flex-col-reverse md:flex-row">
+      <ColumnChart />
+      <div className="w-full h-full p-4 md:p-20 flex flex-col-reverse md:flex-row">
         <div className="w-full md:w-2/3">
           <div className=" flex flex-row flex-wrap items-center space-x-4 py-8">
             <button
