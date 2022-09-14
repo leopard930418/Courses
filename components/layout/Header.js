@@ -51,7 +51,7 @@ export default function Header({ color = false, ...props }) {
   }));
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  console.log("leopard test anchorE1",anchorEl,open)
+  console.log("leopard test anchorE1", anchorEl, open);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -271,6 +271,7 @@ export default function Header({ color = false, ...props }) {
               </div>
             ))}
           </div>
+          <></>
         </div>
       ) : // </Drawer>
       null}
