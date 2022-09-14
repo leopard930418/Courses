@@ -267,6 +267,7 @@ export default function Header({ color = false, ...props }) {
                   </div>
                 </div>
                 {/* <CustomImage src={border} className="w-full px-1 py-1"></CustomImage> */}
+                <></>
               </div>
             ))}
           </div>
